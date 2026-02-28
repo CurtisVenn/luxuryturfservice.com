@@ -1,12 +1,1329 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxury Turf Service | Top Dressing & Soil Health (Davis County, UT)</title>
+  <meta name="description" content="Luxury Turf Service provides premium top dressing, aeration, overseeding, and soil building in Davis County and surrounding areas. Organic options. Request a quote." />
+  <meta name="theme-color" content="#0b1f35" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Luxury Turf Service" />
+  <meta property="og:description" content="Premium top dressing & soil health for luxury lawns. Organic options. Davis County, UT." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://source.unsplash.com/ryWH_0DC4oc/1200x630" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --navy-950:#071628;
+      --navy-900:#0b1f35;
+      --navy-800:#0f2a45;
+      --navy-700:#173659;
+      --green-600:#22c55e;
+      --green-500:#2ee07a;
+      --green-400:#52f0a1;
+      --sand-200:#efe7d7;
+      --sand-100:#f6f1e8;
+      --ink:#0b1220;
+      --muted: rgba(255,255,255,.75);
+      --muted2: rgba(255,255,255,.62);
+      --stroke: rgba(255,255,255,.14);
+      --shadow: 0 20px 60px rgba(0,0,0,.35);
+      --shadow2: 0 12px 40px rgba(0,0,0,.28);
+      --radius-xl: 22px;
+      --radius-lg: 18px;
+      --radius-md: 14px;
+      --maxw: 1120px;
+    }
+
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:#fff;
+      background: radial-gradient(1200px 700px at 20% 0%, rgba(46,224,122,.18), transparent 55%),
+                  radial-gradient(1000px 700px at 80% 10%, rgba(34,197,94,.12), transparent 55%),
+                  linear-gradient(180deg, var(--navy-950), var(--navy-900) 30%, #081a2f 100%);
+      overflow-x:hidden;
+    }
+    a{ color:inherit; text-decoration:none; }
+    img{ max-width:100%; display:block; }
+    button, input, select, textarea{ font-family:inherit; }
+
+    /* Layout */
+    .wrap{ width:min(var(--maxw), calc(100% - 48px)); margin:0 auto; }
+    .section{ padding: 88px 0; position:relative; }
+    .grid{ display:grid; gap:18px; }
+
+    /* Top ambient accents */
+    .orb{
+      position:absolute; inset:auto auto auto auto;
+      width: 520px; height: 520px; border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, rgba(46,224,122,.35), rgba(34,197,94,.12), transparent 60%);
+      filter: blur(18px);
+      opacity:.9;
+      pointer-events:none;
+      transform: translate3d(0,0,0);
+    }
+    .orb.one{ top:-180px; left:-180px; }
+    .orb.two{ top: 80px; right:-220px; width: 620px; height: 620px; opacity:.7; }
+    .noise{
+      pointer-events:none;
+      position:fixed; inset:0;
+      background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" stitchTiles="stitch"/></filter><rect width="140" height="140" filter="url(%23n)" opacity=".14"/></svg>');
+      mix-blend-mode: overlay;
+      opacity:.35;
+    }
+
+    /* Nav */
+    .nav{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(14px);
+      background: linear-gradient(180deg, rgba(7,22,40,.78), rgba(7,22,40,.45));
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .nav-inner{
+      height:68px;
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:800; letter-spacing:.2px;
+    }
+    .mark{
+      width:36px; height:36px; border-radius:12px;
+      background: radial-gradient(circle at 30% 30%, rgba(46,224,122,.9), rgba(34,197,94,.35)),
+                  linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,255,255,.06));
+      border:1px solid rgba(255,255,255,.18);
+      box-shadow: 0 10px 25px rgba(0,0,0,.22);
+      display:grid; place-items:center;
+    }
+    .mark svg{ opacity:.95; }
+    .nav-links{
+      display:none;
+      gap:18px;
+      align-items:center;
+      color:rgba(255,255,255,.86);
+      font-weight:600;
+      font-size:14px;
+    }
+    .nav-links a{ padding:10px 10px; border-radius:12px; }
+    .nav-links a:hover{ background: rgba(255,255,255,.06); }
+    .nav-cta{
+      display:flex; gap:10px; align-items:center;
+    }
+
+    /* Buttons */
+    .btn{
+      border:1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.06);
+      color:#fff;
+      padding: 11px 14px;
+      border-radius: 14px;
+      font-weight:700;
+      font-size:14px;
+      display:inline-flex; align-items:center; gap:10px;
+      cursor:pointer;
+      transition: transform .15s ease, background .15s ease, border-color .15s ease;
+      user-select:none;
+      white-space:nowrap;
+    }
+    .btn:hover{ transform: translateY(-1px); background: rgba(255,255,255,.09); border-color: rgba(255,255,255,.22); }
+    .btn:active{ transform: translateY(0px); }
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(46,224,122,.95), rgba(34,197,94,.78));
+      color:#04130a;
+      border-color: rgba(46,224,122,.45);
+      box-shadow: 0 14px 34px rgba(34,197,94,.18);
+    }
+    .btn.primary:hover{ background: linear-gradient(135deg, rgba(82,240,161,.95), rgba(34,197,94,.86)); }
+    .btn.ghost{
+      background: transparent;
+    }
+    .btn.icon{
+      padding: 11px 12px;
+    }
+    .btn svg{ width:16px; height:16px; }
+
+    /* Hero */
+    .hero{
+      padding: 54px 0 26px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+      align-items:stretch;
+    }
+    .kicker{
+      display:inline-flex; gap:10px; align-items:center;
+      font-weight:700;
+      color: rgba(255,255,255,.82);
+      font-size: 13px;
+      letter-spacing:.2px;
+      padding: 8px 12px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      border-radius: 999px;
+      width: fit-content;
+    }
+    .kicker .dot{
+      width:8px; height:8px; border-radius:50%;
+      background: var(--green-500);
+      box-shadow: 0 0 0 6px rgba(46,224,122,.12);
+    }
+    h1{
+      margin: 14px 0 10px;
+      font-size: clamp(34px, 4.3vw, 56px);
+      line-height: 1.03;
+      letter-spacing: -0.02em;
+    }
+    .sub{
+      margin: 0 0 18px;
+      font-size: 16px;
+      line-height: 1.65;
+      color: rgba(255,255,255,.78);
+      max-width: 58ch;
+    }
+    .hero-actions{
+      display:flex; flex-wrap:wrap; gap:12px; align-items:center;
+      margin-top: 14px;
+    }
+    .trust{
+      display:flex; flex-wrap:wrap; gap:10px;
+      margin-top: 18px;
+      color: rgba(255,255,255,.72);
+      font-size: 13px;
+    }
+    .pill{
+      padding: 9px 12px;
+      border-radius: 999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+    }
+
+    .hero-card{
+      position:relative;
+      border-radius: var(--radius-xl);
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      box-shadow: var(--shadow);
+      min-height: 360px;
+    }
+    .hero-media{
+      position:absolute; inset:0;
+      background:
+        linear-gradient(180deg, rgba(7,22,40,.25), rgba(7,22,40,.92)),
+        url("https://source.unsplash.com/ryWH_0DC4oc/1600x900") center/cover no-repeat;
+      transform: scale(1.02);
+      filter: saturate(1.1) contrast(1.05);
+    }
+    .hero-overlay{
+      position:absolute; inset:0;
+      background:
+        radial-gradient(900px 500px at 70% 10%, rgba(46,224,122,.18), transparent 55%),
+        radial-gradient(700px 480px at 25% 70%, rgba(34,197,94,.12), transparent 55%);
+      mix-blend-mode: screen;
+      opacity:.9;
+    }
+    .hero-float{
+      position:absolute; left:18px; right:18px; bottom:18px;
+      display:grid; gap:12px;
+    }
+    .statbar{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:12px;
+    }
+    .stat{
+      border-radius: 18px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(7,22,40,.55);
+      backdrop-filter: blur(10px);
+      padding: 14px 14px;
+    }
+    .stat .label{ color: rgba(255,255,255,.75); font-size: 12px; font-weight:700; }
+    .stat .value{ margin-top:6px; font-size: 14px; font-weight:800; letter-spacing:.2px; }
+
+    /* Section headings */
+    .h2{
+      font-size: clamp(26px, 2.6vw, 36px);
+      letter-spacing:-0.02em;
+      margin:0 0 10px;
+    }
+    .lead{
+      color: rgba(255,255,255,.75);
+      line-height: 1.7;
+      margin: 0 0 22px;
+      max-width: 70ch;
+    }
+
+    /* Cards */
+    .card{
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      border-radius: var(--radius-xl);
+      overflow:hidden;
+      box-shadow: var(--shadow2);
+    }
+    .card.pad{ padding: 18px; }
+    .card .topline{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px;
+      margin-bottom: 10px;
+    }
+    .badge{
+      font-size: 12px;
+      font-weight:800;
+      color: rgba(255,255,255,.86);
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      padding: 7px 10px;
+      border-radius: 999px;
+      width:fit-content;
+    }
+    .iconchip{
+      width:40px; height:40px;
+      border-radius: 16px;
+      display:grid; place-items:center;
+      border: 1px solid rgba(255,255,255,.16);
+      background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
+    }
+    .iconchip svg{ width:18px; height:18px; opacity:.92; }
+
+    /* Services */
+    .services{
+      grid-template-columns: 1fr;
+      gap:14px;
+    }
+    .service-title{
+      font-weight: 850;
+      font-size: 16px;
+      margin: 6px 0 6px;
+      letter-spacing:.1px;
+    }
+    .service-desc{
+      color: rgba(255,255,255,.74);
+      line-height: 1.6;
+      margin: 0;
+      font-size: 14px;
+    }
+    .service-note{
+      margin-top: 12px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      color: rgba(255,255,255,.74);
+      font-size: 12px;
+    }
+
+    /* Top Dressing explainer */
+    .split{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      align-items:stretch;
+    }
+    .diagram{
+      position:relative;
+      border-radius: var(--radius-xl);
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,.12);
+      background:
+        radial-gradient(800px 500px at 30% 20%, rgba(46,224,122,.12), transparent 60%),
+        linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      padding: 18px;
+      min-height: 360px;
+    }
+    .diagram .layers{
+      position:absolute; left:18px; right:18px; top:64px; bottom:18px;
+      display:grid; gap:12px;
+      align-content:start;
+    }
+    .layer{
+      border-radius: 18px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(7,22,40,.45);
+      backdrop-filter: blur(10px);
+      padding: 14px;
+      display:flex; gap:12px; align-items:flex-start;
+      position:relative;
+    }
+    .layer:before{
+      content:"";
+      position:absolute;
+      inset:-1px;
+      border-radius: 18px;
+      background: radial-gradient(240px 120px at 10% 10%, rgba(46,224,122,.20), transparent 60%);
+      opacity:.55;
+      pointer-events:none;
+    }
+    .layer .mini{
+      width:40px; height:40px; border-radius: 16px;
+      display:grid; place-items:center;
+      border:1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.06);
+      flex:0 0 auto;
+    }
+    .layer h4{
+      margin: 0;
+      font-size: 14px;
+      font-weight: 850;
+      letter-spacing:.1px;
+    }
+    .layer p{
+      margin: 6px 0 0;
+      color: rgba(255,255,255,.74);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .diagram .soil-bg{
+      position:absolute; inset:0;
+      background:
+        linear-gradient(180deg, rgba(7,22,40,.30), rgba(7,22,40,.92)),
+        url("https://source.unsplash.com/qB7E-e8seVk/1400x900") center/cover no-repeat;
+      opacity:.45;
+      filter:saturate(1.05) contrast(1.05);
+      transform: scale(1.02);
+    }
+    .diagram .titlebar{
+      position:relative;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,.10);
+    }
+    .diagram .titlebar .small{
+      color: rgba(255,255,255,.70);
+      font-weight:700;
+      font-size: 12px;
+    }
+
+    /* Before/After Slider */
+    .slider{
+      position:relative;
+      border-radius: var(--radius-xl);
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      box-shadow: var(--shadow2);
+      min-height: 340px;
+      touch-action: none;
+    }
+    .slider .img{
+      position:absolute; inset:0;
+      background-position:center;
+      background-size: cover;
+      filter: saturate(1.05) contrast(1.05);
+      transform: scale(1.02);
+    }
+    .slider .after{
+      background-image:
+        linear-gradient(180deg, rgba(7,22,40,.20), rgba(7,22,40,.70)),
+        url("https://source.unsplash.com/1KCd9nAeog8/1600x1000");
+    }
+    .slider .before-wrap{
+      position:absolute; inset:0;
+      width: 50%;
+      overflow:hidden;
+    }
+    .slider .before{
+      background-image:
+        linear-gradient(180deg, rgba(7,22,40,.20), rgba(7,22,40,.70)),
+        url("https://source.unsplash.com/c3EziA7lUgg/1600x1000");
+    }
+    .slider .handle{
+      position:absolute; top:0; bottom:0;
+      left: calc(50% - 1px);
+      width: 2px;
+      background: rgba(255,255,255,.7);
+      box-shadow: 0 0 0 6px rgba(46,224,122,.14);
+    }
+    .slider .knob{
+      position:absolute;
+      top:50%;
+      left: calc(50% - 22px);
+      transform: translateY(-50%);
+      width: 44px; height: 44px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.22);
+      background: rgba(7,22,40,.65);
+      backdrop-filter: blur(10px);
+      display:grid; place-items:center;
+      box-shadow: 0 16px 40px rgba(0,0,0,.35);
+      cursor: grab;
+    }
+    .slider .knob:active{ cursor: grabbing; }
+    .slider .labels{
+      position:absolute; top:14px; left:14px; right:14px;
+      display:flex; justify-content:space-between; align-items:center;
+      pointer-events:none;
+    }
+    .tag{
+      font-weight:900;
+      font-size:12px;
+      letter-spacing:.2px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: rgba(7,22,40,.65);
+      border: 1px solid rgba(255,255,255,.14);
+      color: rgba(255,255,255,.88);
+      backdrop-filter: blur(10px);
+    }
+    .slider .caption{
+      position:absolute; left:14px; right:14px; bottom:14px;
+      padding: 12px 12px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(7,22,40,.62);
+      backdrop-filter: blur(10px);
+      color: rgba(255,255,255,.78);
+      font-size: 13px;
+      line-height:1.55;
+    }
+
+    /* Steps */
+    .steps{
+      grid-template-columns: 1fr;
+      gap:14px;
+    }
+    .step{
+      display:flex; gap:12px; align-items:flex-start;
+    }
+    .num{
+      width:36px; height:36px; border-radius: 14px;
+      display:grid; place-items:center;
+      font-weight:900;
+      background: rgba(46,224,122,.14);
+      border: 1px solid rgba(46,224,122,.30);
+      color: rgba(255,255,255,.92);
+      flex:0 0 auto;
+    }
+    .step h4{ margin:0; font-size: 14px; font-weight:900; }
+    .step p{ margin:6px 0 0; color: rgba(255,255,255,.74); font-size: 13px; line-height:1.55; }
+
+    /* FAQ */
+    .faq{
+      display:grid; gap:12px;
+    }
+    details{
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      border-radius: 18px;
+      padding: 14px 14px;
+    }
+    summary{
+      list-style:none;
+      cursor:pointer;
+      font-weight:900;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+    }
+    summary::-webkit-details-marker{ display:none; }
+    details p{
+      margin: 10px 0 0;
+      color: rgba(255,255,255,.74);
+      line-height:1.65;
+      font-size: 13px;
+    }
+
+    /* Contact */
+    .contact{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      align-items:stretch;
+    }
+    .form{
+      display:grid; gap:12px;
+    }
+    .field{
+      display:grid; gap:8px;
+    }
+    label{
+      font-size: 12px;
+      font-weight: 850;
+      color: rgba(255,255,255,.78);
+    }
+    input, textarea, select{
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(7,22,40,.55);
+      color:#fff;
+      padding: 12px 12px;
+      outline:none;
+      transition: border-color .15s ease, background .15s ease;
+      font-size: 14px;
+    }
+    input:focus, textarea:focus, select:focus{
+      border-color: rgba(46,224,122,.55);
+      background: rgba(7,22,40,.68);
+    }
+    textarea{ min-height: 110px; resize: vertical; }
+    .row{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:12px;
+    }
+    .hint{
+      margin: 2px 0 0;
+      font-size: 12px;
+      color: rgba(255,255,255,.62);
+      line-height:1.5;
+    }
+
+    /* Footer */
+    footer{
+      padding: 26px 0 40px;
+      border-top: 1px solid rgba(255,255,255,.10);
+      color: rgba(255,255,255,.62);
+      font-size: 13px;
+    }
+    .footer-row{
+      display:flex; gap:12px; flex-wrap:wrap;
+      justify-content:space-between; align-items:center;
+    }
+
+    /* Reveal animations */
+    .reveal{
+      opacity:0;
+      transform: translateY(12px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+    .reveal.on{
+      opacity:1;
+      transform: translateY(0);
+    }
+
+    /* Responsive */
+    @media (min-width: 860px){
+      .nav-links{ display:flex; }
+      .hero-grid{ grid-template-columns: 1.1fr .9fr; gap: 18px; }
+      .services{ grid-template-columns: repeat(2, 1fr); }
+      .split{ grid-template-columns: 1.05fr .95fr; }
+      .steps{ grid-template-columns: repeat(2, 1fr); }
+      .contact{ grid-template-columns: 1.05fr .95fr; }
+      .row{ grid-template-columns: 1fr 1fr; }
+      .hero-card{ min-height: 420px; }
+      .slider{ min-height: 380px; }
+    }
+
+    /* Small helper */
+    .muted{ color: rgba(255,255,255,.72); }
+    .hr{ height:1px; background: rgba(255,255,255,.10); margin: 16px 0; }
+  </style>
+
+  <!-- LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Luxury Turf Service",
+    "areaServed":"Davis County, UT and surrounding areas",
+    "email":"luxturfservice@gmail.com",
+    "telephone":"+1-385-424-8588",
+    "description":"Premium top dressing, aeration, overseeding, and soil building with organic options.",
+    "url":"https://www.luxuryturfservice.com/"
+  }
+  </script>
 </head>
+
 <body>
-    <h1>Welcome!</h1>
-    <p>We do lawn shit</p>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Luxury Turf Service home">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 3c4.5 3.2 7 7 7 10.7A7 7 0 1 1 5 13.7C5 10 7.5 6.2 12 3Z" stroke="rgba(7,22,40,.9)" stroke-width="1.8"/>
+            <path d="M8 14c1.2-2.1 3.2-3.3 4-3.7.8.4 2.8 1.6 4 3.7" stroke="rgba(7,22,40,.9)" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>Luxury Turf Service</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#topdressing">Why Top Dressing</a>
+        <a href="#process">Process</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Request a Quote</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn ghost" href="tel:+13854248588" aria-label="Call Kaeden">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6.5 3.5h3l1.2 4-2 1.2c1.3 2.6 3.4 4.7 6 6l1.2-2 4 1.2v3c0 1.1-.9 2-2 2C10.7 21 3 13.3 3 5.5c0-1.1.9-2 2-2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          Call
+        </a>
+        <a class="btn primary" href="#contact">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 7.5 12 12l8-4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M5.5 6h13A1.5 1.5 0 0 1 20 7.5v9A1.5 1.5 0 0 1 18.5 18h-13A1.5 1.5 0 0 1 4 16.5v-9A1.5 1.5 0 0 1 5.5 6Z" stroke="currentColor" stroke-width="1.7"/></svg>
+          Request a Quote
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="orb one" aria-hidden="true"></div>
+    <div class="orb two" aria-hidden="true"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="reveal">
+          <div class="kicker">
+            <span class="dot" aria-hidden="true"></span>
+            Davis County & surrounding areas • Organic options • Pet + kid friendly focus
+          </div>
+
+          <h1>Top Dressing & Soil Health for Premium Lawns.</h1>
+          <p class="sub">
+            Luxury Turf Service specializes in <strong>top dressing</strong> with premium sand or sand/compost blends,
+            plus aeration, overseeding, and soil building. The goal is simple: a smoother, denser, healthier lawn that
+            <strong>drains better</strong>, needs less water over time, and crowds out weeds naturally.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M7 11l5 5 5-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 20h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              Get a Quote
+            </a>
+            <a class="btn" href="mailto:luxturfservice@gmail.com?subject=Luxury%20Turf%20Service%20-%20Quote%20Request" aria-label="Email Luxury Turf Service">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 7.5 12 12l8-4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M5.5 6h13A1.5 1.5 0 0 1 20 7.5v9A1.5 1.5 0 0 1 18.5 18h-13A1.5 1.5 0 0 1 4 16.5v-9A1.5 1.5 0 0 1 5.5 6Z" stroke="currentColor" stroke-width="1.7"/></svg>
+              Email
+            </a>
+            <a class="btn" href="tel:+13854248588" aria-label="Call Kaeden at 385-424-8588">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6.5 3.5h3l1.2 4-2 1.2c1.3 2.6 3.4 4.7 6 6l1.2-2 4 1.2v3c0 1.1-.9 2-2 2C10.7 21 3 13.3 3 5.5c0-1.1.9-2 2-2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+              Call Kaeden
+            </a>
+          </div>
+
+          <div class="trust">
+            <span class="pill">10+ years green-industry experience</span>
+            <span class="pill">Luxury finish • Soil-first approach</span>
+            <span class="pill">No pricing games — quote based on your property</span>
+          </div>
+        </div>
+
+        <div class="hero-card reveal" aria-label="Lush lawn image and quick highlights">
+          <div class="hero-media" aria-hidden="true"></div>
+          <div class="hero-overlay" aria-hidden="true"></div>
+
+          <div class="hero-float">
+            <div class="statbar">
+              <div class="stat">
+                <div class="label">Core focus</div>
+                <div class="value">Top Dressing • Leveling • Soil Health</div>
+              </div>
+              <div class="stat">
+                <div class="label">Materials</div>
+                <div class="value">Premium sand or sand/organic blend</div>
+              </div>
+            </div>
+            <div class="stat">
+              <div class="label">Outcome</div>
+              <div class="value">Smoother surface • Thicker turf • Better drainage • Fewer weeds</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="wrap">
+        <div class="reveal">
+          <h2 class="h2">Services</h2>
+          <p class="lead">
+            We’re built around one thing most lawn companies skip: <strong>top dressing done right</strong>.
+            We pair it with proven turf practices to deliver a clean, luxury result.
+          </p>
+        </div>
+
+        <div class="grid services">
+          <article class="card pad reveal">
+            <div class="topline">
+              <div class="badge">Signature Service</div>
+              <div class="iconchip" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 16c3-1 6-1 9 0s6 1 7 0v3c-1 1-4 1-7 0s-6-1-9 0v-3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M7 12c1.2-2.5 3-4 5-5 2 1 3.8 2.5 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+            <div class="service-title">Top Dressing (Premium Sand or Sand/Organic Blend)</div>
+            <p class="service-desc">
+              A thin, even layer worked down into the canopy to <strong>level low spots</strong>, improve soil structure,
+              and set your lawn up for thicker growth. Ideal paired with aeration and overseeding.
+            </p>
+            <div class="service-note">
+              <span class="pill">Better drainage</span>
+              <span class="pill">Smoother lawn</span>
+              <span class="pill">Boosts density</span>
+            </div>
+          </article>
+
+          <article class="card pad reveal">
+            <div class="topline">
+              <div class="badge">Turf Rehab</div>
+              <div class="iconchip" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 20c-4-2.8-7-6.3-7-10a7 7 0 0 1 14 0c0 3.7-3 7.2-7 10Z" stroke="currentColor" stroke-width="1.7"/><path d="M12 9v5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M9.5 12.2 12 14.6l2.5-2.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="service-title">Core Aeration</div>
+            <p class="service-desc">
+              Relieves compaction and opens pathways for air, water, and nutrients. Creates the perfect window for
+              top dressing and seed to settle in.
+            </p>
+            <div class="service-note">
+              <span class="pill">Less runoff</span>
+              <span class="pill">Healthier roots</span>
+              <span class="pill">Improved infiltration</span>
+            </div>
+          </article>
+
+          <article class="card pad reveal">
+            <div class="topline">
+              <div class="badge">Density Builder</div>
+              <div class="iconchip" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c4.5 3.2 7 7 7 10.7A7 7 0 1 1 5 13.7C5 10 7.5 6.2 12 3Z" stroke="currentColor" stroke-width="1.7"/><path d="M8 15c1-2 3-3 4-3s3 1 4 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+            <div class="service-title">Overseeding</div>
+            <p class="service-desc">
+              New seed + proper soil contact = thicker turf. A dense lawn naturally shades soil, helping reduce weeds
+              and holding moisture better in summer.
+            </p>
+            <div class="service-note">
+              <span class="pill">Thicker lawn</span>
+              <span class="pill">Fewer weeds</span>
+              <span class="pill">Better color</span>
+            </div>
+          </article>
+
+          <article class="card pad reveal">
+            <div class="topline">
+              <div class="badge">Soil-First</div>
+              <div class="iconchip" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 15c2-1 4-1 6 0s4 1 6 0 4-1 4 0v4H4v-4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M7 12c.7-2.5 2.5-4.2 5-5 2.5.8 4.3 2.5 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+            <div class="service-title">Soil Building (Organic Options)</div>
+            <p class="service-desc">
+              Organic materials help feed soil biology, improve structure, and support long-term turf health — a great fit
+              for families who want a lawn that’s <strong>safer for pets and kids</strong>.
+            </p>
+            <div class="service-note">
+              <span class="pill">Organic options</span>
+              <span class="pill">Pet + kid friendly focus</span>
+              <span class="pill">Long-term health</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY TOP DRESSING -->
+    <section id="topdressing" class="section">
+      <div class="wrap">
+        <div class="reveal">
+          <h2 class="h2">Why top dressing works (and why it looks expensive)</h2>
+          <p class="lead">
+            Top dressing is where “nice lawn” turns into “luxury lawn.” Done correctly, it improves the surface, the soil,
+            and the plant — all at once.
+          </p>
+        </div>
+
+        <div class="split">
+          <div class="card pad reveal">
+            <div class="badge">Key Benefits</div>
+            <div class="hr"></div>
+            <div class="grid" style="gap:12px;">
+              <div class="step">
+                <div class="num">1</div>
+                <div>
+                  <h4>Smoother lawn</h4>
+                  <p>Levels minor dips and uneven areas so your yard feels cleaner, safer, and more “finished.”</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="num">2</div>
+                <div>
+                  <h4>Better water efficiency + drainage</h4>
+                  <p>Improves infiltration so water gets into the root zone instead of running off or pooling.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="num">3</div>
+                <div>
+                  <h4>Thicker turf health</h4>
+                  <p>Supports stronger roots and better growth conditions — especially when paired with aeration and overseeding.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="num">4</div>
+                <div>
+                  <h4>Reduced weeds (naturally)</h4>
+                  <p>A dense, healthy canopy crowds out weeds and shades soil so weed seeds struggle to establish.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="num">5</div>
+                <div>
+                  <h4>Organic options for families</h4>
+                  <p>We can use organic components focused on soil biology — ideal for homes with kids and pets.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hr"></div>
+            <div style="display:flex; flex-wrap:wrap; gap:10px;">
+              <a class="btn primary" href="#contact">Request a Quote</a>
+              <a class="btn" href="tel:+13854248588">Call Kaeden</a>
+            </div>
+          </div>
+
+          <div class="diagram reveal" aria-label="Top dressing diagram">
+            <div class="soil-bg" aria-hidden="true"></div>
+            <div class="titlebar">
+              <div>
+                <div style="font-weight:900; letter-spacing:.1px;">How top dressing upgrades the lawn</div>
+                <div class="small">Thin layers • Worked into canopy • Built for long-term results</div>
+              </div>
+              <div class="badge">Soil-first</div>
+            </div>
+
+            <div class="layers">
+              <div class="layer">
+                <div class="mini" aria-hidden="true">🌿</div>
+                <div>
+                  <h4>Canopy leveling</h4>
+                  <p>Light, even top dressing fills low spots and creates a smoother surface without smothering the turf.</p>
+                </div>
+              </div>
+              <div class="layer">
+                <div class="mini" aria-hidden="true">💧</div>
+                <div>
+                  <h4>Infiltration & drainage</h4>
+                  <p>Sand-based materials improve water movement into the root zone and reduce pooling.</p>
+                </div>
+              </div>
+              <div class="layer">
+                <div class="mini" aria-hidden="true">🌱</div>
+                <div>
+                  <h4>Seed-to-soil contact</h4>
+                  <p>When overseeding, top dressing helps seed nestle in — improving germination and density.</p>
+                </div>
+              </div>
+              <div class="layer">
+                <div class="mini" aria-hidden="true">🧬</div>
+                <div>
+                  <h4>Soil biology (organic option)</h4>
+                  <p>Organic blends can feed microbes and improve structure — building healthier turf over time.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="height:18px;"></div>
+
+        <!-- BEFORE/AFTER SLIDER -->
+        <div class="reveal">
+          <h3 style="margin:0 0 10px; font-size:18px; font-weight:900; letter-spacing:.1px;">Before / After (drag the handle)</h3>
+          <p class="lead" style="margin-bottom:16px;">
+            This is a smooth interactive slider using placeholder images for now. When you have real photos, we’ll swap them in.
+          </p>
+        </div>
+
+        <div class="slider reveal" id="baSlider" aria-label="Before and after slider">
+          <div class="img after" aria-hidden="true"></div>
+          <div class="before-wrap" id="beforeWrap" aria-hidden="true">
+            <div class="img before"></div>
+          </div>
+          <div class="handle" id="sliderHandle" aria-hidden="true"></div>
+          <div class="knob" id="sliderKnob" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0" aria-label="Before and after slider control">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M10 7 6 12l4 5" stroke="rgba(255,255,255,.9)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 7 18 12l-4 5" stroke="rgba(255,255,255,.9)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="labels" aria-hidden="true">
+            <span class="tag">BEFORE</span>
+            <span class="tag">AFTER</span>
+          </div>
+          <div class="caption">
+            <strong style="color:rgba(255,255,255,.92);">What changes:</strong>
+            improved surface smoothness, stronger root environment, better water movement, and a thicker canopy that naturally helps reduce weeds.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section">
+      <div class="wrap">
+        <div class="reveal">
+          <h2 class="h2">Our process (simple, clean, professional)</h2>
+          <p class="lead">
+            Most clients just want to know: “Are you organized?” Yes. This is how we keep it smooth and predictable from quote to finish.
+          </p>
+        </div>
+
+        <div class="grid steps">
+          <div class="card pad reveal">
+            <div class="step">
+              <div class="num">1</div>
+              <div>
+                <h4>Quick quote request</h4>
+                <p>Send your info + lot size (optional). We’ll confirm goals and recommend the best combo (top dressing / aeration / overseed).</p>
+              </div>
+            </div>
+          </div>
+          <div class="card pad reveal">
+            <div class="step">
+              <div class="num">2</div>
+              <div>
+                <h4>Prep & plan</h4>
+                <p>We align timing (weather/irrigation), confirm access, and choose premium sand or sand/organic blend based on your lawn.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card pad reveal">
+            <div class="step">
+              <div class="num">3</div>
+              <div>
+                <h4>Service day</h4>
+                <p>Clean edges, careful application, and an even finish. We work for a luxury look — not just “good enough.”</p>
+              </div>
+            </div>
+          </div>
+          <div class="card pad reveal">
+            <div class="step">
+              <div class="num">4</div>
+              <div>
+                <h4>Aftercare instructions</h4>
+                <p>You’ll get simple watering + mowing guidance so your lawn responds quickly and comes in thick.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="wrap">
+        <div class="reveal">
+          <h2 class="h2">FAQ</h2>
+          <p class="lead">Quick answers to the questions homeowners ask before committing.</p>
+        </div>
+
+        <div class="faq reveal">
+          <details>
+            <summary>
+              What is top dressing, in plain English?
+              <span class="muted">+</span>
+            </summary>
+            <p>
+              Top dressing is applying a thin layer of premium material (sand or sand/organic blend) across the lawn, then working it down into the canopy.
+              It helps level minor unevenness, improves how water moves through the soil, and supports thicker turf over time.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              Will it help with pooling water or dry spots?
+              <span class="muted">+</span>
+            </summary>
+            <p>
+              Often, yes. A properly selected sand-based top dressing improves infiltration and can reduce pooling caused by minor surface issues.
+              For deeper drainage problems, we’ll tell you upfront what top dressing can and can’t solve.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              When should I do aeration + overseeding?
+              <span class="muted">+</span>
+            </summary>
+            <p>
+              Typically during the best growth windows. The right timing depends on your turf type and weather.
+              Aeration + top dressing + overseeding is one of the fastest paths to a noticeably thicker lawn.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              Is it safe for kids and pets?
+              <span class="muted">+</span>
+            </summary>
+            <p>
+              We offer organic options and a soil-first approach. If you have specific concerns, tell us in the quote request and we’ll recommend the safest approach for your household.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              Do you give pricing online?
+              <span class="muted">+</span>
+            </summary>
+            <p>
+              Not yet — because properties vary (lot size, access, lawn condition, and service mix). We keep it simple: request a quote and we’ll give you a clean, straightforward number.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <div class="reveal">
+          <h2 class="h2">Request a quote</h2>
+          <p class="lead">
+            Fill this out and it will open a pre-written email to <strong>luxturfservice@gmail.com</strong> with your details.
+            Fast, simple, and perfect for GitHub Pages.
+          </p>
+        </div>
+
+        <div class="contact">
+          <div class="card pad reveal">
+            <div class="badge">Contact</div>
+            <div class="hr"></div>
+
+            <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+              <a class="btn primary" href="tel:+13854248588">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6.5 3.5h3l1.2 4-2 1.2c1.3 2.6 3.4 4.7 6 6l1.2-2 4 1.2v3c0 1.1-.9 2-2 2C10.7 21 3 13.3 3 5.5c0-1.1.9-2 2-2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+                Call Kaeden: 385-424-8588
+              </a>
+              <a class="btn" href="mailto:luxturfservice@gmail.com?subject=Luxury%20Turf%20Service%20-%20Quote%20Request">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 7.5 12 12l8-4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M5.5 6h13A1.5 1.5 0 0 1 20 7.5v9A1.5 1.5 0 0 1 18.5 18h-13A1.5 1.5 0 0 1 4 16.5v-9A1.5 1.5 0 0 1 5.5 6Z" stroke="currentColor" stroke-width="1.7"/></svg>
+                Email: luxturfservice@gmail.com
+              </a>
+            </div>
+
+            <p class="hint">
+              Service area: Davis County + surrounding areas. We’ll respond with next steps and a clean quote.
+            </p>
+
+            <div class="hr"></div>
+            <div class="badge">What we’ll ask (so we can quote fast)</div>
+            <p class="hint" style="margin-top:10px;">
+              Name, phone, address/city, services you want, and your lot square footage if you know it (optional).
+            </p>
+          </div>
+
+          <div class="card pad reveal">
+            <div class="badge">Quote Email Builder</div>
+            <div class="hr"></div>
+
+            <form class="form" id="quoteForm">
+              <div class="row">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" placeholder="Your name" required />
+                </div>
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" placeholder="(___) ___-____" required />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="field">
+                  <label for="city">City / Area</label>
+                  <input id="city" name="city" type="text" placeholder="e.g., Farmington / Kaysville / Bountiful" />
+                </div>
+                <div class="field">
+                  <label for="sqft">Lot square footage (optional)</label>
+                  <input id="sqft" name="sqft" type="text" placeholder="e.g., 3,500 sq ft" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="servicesSelect">Services you’re interested in</label>
+                <select id="servicesSelect" name="servicesSelect" multiple aria-label="Select services (multiple)">
+                  <option value="Top Dressing (Premium sand or sand/organic blend)">Top Dressing (Premium sand or sand/organic blend)</option>
+                  <option value="Core Aeration">Core Aeration</option>
+                  <option value="Overseeding">Overseeding</option>
+                  <option value="Soil Building (Organic options)">Soil Building (Organic options)</option>
+                </select>
+                <div class="hint">Tip: On desktop hold Ctrl (Windows) / Cmd (Mac) to select multiple.</div>
+              </div>
+
+              <div class="field">
+                <label for="details">Notes (optional)</label>
+                <textarea id="details" name="details" placeholder="Anything we should know? (pooling water, uneven areas, pets/kids focus, timing, etc.)"></textarea>
+              </div>
+
+              <button class="btn primary" type="submit">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M12 6l6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Create Email & Send
+              </button>
+
+              <p class="hint" style="margin:0;">
+                This opens your email app with a pre-filled message. If nothing opens, your browser may be blocking mailto links — in that case use the Email button above.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section" style="padding-top:40px;">
+      <div class="wrap">
+        <div class="card pad reveal" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:14px;">
+          <div>
+            <div class="badge">Ready when you are</div>
+            <div style="font-weight:900; font-size:18px; margin-top:10px;">Let’s make your lawn look expensive.</div>
+            <div class="hint">Top dressing + soil health is the fastest way to get a luxury finish that lasts.</div>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn primary" href="#contact">Request a Quote</a>
+            <a class="btn" href="tel:+13854248588">Call Kaeden</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap footer-row">
+        <div>© <span id="year"></span> Luxury Turf Service • Davis County, UT</div>
+        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="mailto:luxturfservice@gmail.com">luxturfservice@gmail.com</a>
+          <span class="muted">•</span>
+          <a href="tel:+13854248588">385-424-8588</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // ----------------------------
+    // Smooth reveal on scroll
+    // ----------------------------
+    const reveals = Array.from(document.querySelectorAll('.reveal'));
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('on');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    reveals.forEach(el => io.observe(el));
+
+    // ----------------------------
+    // Footer year
+    // ----------------------------
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ----------------------------
+    // Before/After slider
+    // ----------------------------
+    (function(){
+      const slider = document.getElementById('baSlider');
+      const beforeWrap = document.getElementById('beforeWrap');
+      const handle = document.getElementById('sliderHandle');
+      const knob = document.getElementById('sliderKnob');
+
+      let dragging = false;
+      let pct = 50;
+
+      const setPct = (p) => {
+        pct = Math.max(0, Math.min(100, p));
+        beforeWrap.style.width = pct + '%';
+        handle.style.left = `calc(${pct}% - 1px)`;
+        knob.style.left = `calc(${pct}% - 22px)`;
+        knob.setAttribute('aria-valuenow', Math.round(pct));
+      };
+
+      const pointerToPct = (clientX) => {
+        const r = slider.getBoundingClientRect();
+        const x = clientX - r.left;
+        return (x / r.width) * 100;
+      };
+
+      const start = (clientX) => { dragging = true; setPct(pointerToPct(clientX)); };
+      const move  = (clientX) => { if (!dragging) return; setPct(pointerToPct(clientX)); };
+      const end   = () => { dragging = false; };
+
+      // Mouse
+      knob.addEventListener('mousedown', (e) => { e.preventDefault(); start(e.clientX); });
+      window.addEventListener('mousemove', (e) => move(e.clientX));
+      window.addEventListener('mouseup', end);
+
+      // Touch / Pointer
+      knob.addEventListener('touchstart', (e) => { start(e.touches[0].clientX); }, { passive:true });
+      window.addEventListener('touchmove', (e) => move(e.touches[0].clientX), { passive:true });
+      window.addEventListener('touchend', end);
+
+      // Click anywhere on slider to jump
+      slider.addEventListener('click', (e) => {
+        // prevent click while dragging
+        if (dragging) return;
+        setPct(pointerToPct(e.clientX));
+      });
+
+      // Keyboard support
+      knob.addEventListener('keydown', (e) => {
+        const step = (e.shiftKey ? 10 : 3);
+        if (e.key === 'ArrowLeft') { e.preventDefault(); setPct(pct - step); }
+        if (e.key === 'ArrowRight'){ e.preventDefault(); setPct(pct + step); }
+        if (e.key === 'Home')      { e.preventDefault(); setPct(0); }
+        if (e.key === 'End')       { e.preventDefault(); setPct(100); }
+      });
+
+      setPct(50);
+    })();
+
+    // ----------------------------
+    // Quote form -> mailto builder
+    // ----------------------------
+    document.getElementById('quoteForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // EDIT ME (if you ever change email)
+      const to = 'luxturfservice@gmail.com';
+
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const city = document.getElementById('city').value.trim();
+      const sqft = document.getElementById('sqft').value.trim();
+      const details = document.getElementById('details').value.trim();
+
+      const select = document.getElementById('servicesSelect');
+      const services = Array.from(select.selectedOptions).map(o => o.value);
+
+      const subject = `Luxury Turf Service - Quote Request (${name || 'New Lead'})`;
+
+      const lines = [
+        'Hi Luxury Turf Service,',
+        '',
+        'I’d like a quote for lawn services:',
+        '',
+        `Name: ${name}`,
+        `Phone: ${phone}`,
+        `City/Area: ${city || '(not provided)'}`,
+        `Lot square footage: ${sqft || '(optional / not provided)'}`,
+        `Services interested in: ${services.length ? services.join(', ') : '(not selected)'}`,
+        '',
+        'Notes / Goals:',
+        details ? details : '(none)',
+        '',
+        'Thank you!'
+      ];
+
+      const body = lines.join('\n');
+
+      const mailto = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailto;
+    });
+  </script>
 </body>
 </html>
