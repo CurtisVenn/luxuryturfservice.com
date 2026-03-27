@@ -1,1705 +1,925 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luxury Turf Service | Premium Top Dressing & Soil Health (Davis County, UT)</title>
-  <meta name="description" content="Luxury Turf Service provides premium top dressing, aeration, overseeding, and soil building in Davis County and surrounding areas. Organic options available. Request a quote." />
-  <meta name="theme-color" content="#0b1f35" />
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Luxury Turf Service" />
-  <meta property="og:description" content="Premium top dressing & soil health for luxury lawns. Organic options. Davis County, UT." />
-  <meta property="og:type" content="website" />
+<!-- ═══ PRIMARY SEO ══════════════════════════════════════════ -->
+<title>Top Dressing & Lawn Care | Luxury Turf Service — Davis County, Farmington, Kaysville, UT</title>
+<meta name="description" content="Luxury Turf Service offers premium top dressing, core aeration, overseeding, and organic soil building in Davis County, UT — serving Farmington, Kaysville, Bountiful, Layton, Centerville, and surrounding areas. Request a free quote today."/>
+<meta name="keywords" content="top dressing lawn care Davis County Utah, lawn top dressing Farmington UT, top dressing Kaysville Utah, lawn aeration Bountiful Utah, overseeding Layton Utah, luxury lawn care Davis County, organic lawn care Utah, soil health lawn service Centerville UT, lawn leveling Utah, premium lawn care North Salt Lake"/>
+<link rel="canonical" href="https://www.luxuryturfservice.com/"/>
+<meta name="robots" content="index, follow"/>
+<meta name="theme-color" content="#0d1a0e"/>
 
-  <!-- NOTE: Use a stable, specific Unsplash ID-based source URL (replace anytime). -->
-  <meta property="og:image" content="https://source.unsplash.com/6A6RolEwrvc/1200x630" />
+<!-- ═══ GEO / LOCAL ══════════════════════════════════════════ -->
+<meta name="geo.region" content="US-UT"/>
+<meta name="geo.placename" content="Davis County, Utah"/>
+<meta name="geo.position" content="40.9108;-111.8931"/>
+<meta name="ICBM" content="40.9108, -111.8931"/>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- ═══ OPEN GRAPH ══════════════════════════════════════════ -->
+<meta property="og:title" content="Luxury Turf Service | Premium Top Dressing — Davis County, UT"/>
+<meta property="og:description" content="Premium top dressing, aeration, overseeding & organic soil health. Serving Farmington, Kaysville, Bountiful, Layton & surrounding Utah communities. Get a free quote today."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.luxuryturfservice.com/"/>
+<meta property="og:image" content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=85&auto=format&fit=crop"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Luxury Turf Service"/>
 
-  <style>
-    :root{
-      --navy-975:#050f1c;
-      --navy-950:#071628;
-      --navy-900:#0b1f35;
-      --navy-850:#0d2640;
-      --navy-800:#0f2a45;
-      --navy-700:#173659;
+<!-- ═══ TWITTER CARD ════════════════════════════════════════ -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Luxury Turf Service | Top Dressing — Davis County, UT"/>
+<meta name="twitter:description" content="Premium top dressing & soil health for luxury lawns in Davis County, Utah. Organic options. Pet & kid friendly. Get a free quote."/>
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=85&auto=format&fit=crop"/>
 
-      --green-650:#16a34a;
-      --green-600:#22c55e;
-      --green-500:#2ee07a;
-      --green-400:#52f0a1;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-      --sand-200:#efe7d7;
-      --sand-100:#f6f1e8;
+<style>
+/* ─── TOKENS ────────────────────────────────────────────── */
+:root{
+  --black:   #07100a;
+  --dark:    #0d1a0e;
+  --forest:  #122014;
+  --mid:     #1a3020;
+  --pine:    #224428;
+  --sage:    #3d6e48;
+  --moss:    #5a9068;
+  --leaf:    #7dbf8a;
+  --mint:    #aaddb5;
+  --cream:   #f2ead8;
+  --ivory:   #faf6ee;
+  --gold:    #c9a84c;
+  --gold2:   #e8c96a;
+  --rust:    #8b4a2a;
+  --text-primary: #f0ebe0;
+  --text-muted:   rgba(240,235,224,.68);
+  --text-dim:     rgba(240,235,224,.42);
+  --stroke-light: rgba(255,255,255,.10);
+  --stroke-green: rgba(90,144,104,.30);
+  --radius-xl: 24px;
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --maxw: 1140px;
+  --shadow-xl: 0 32px 80px rgba(0,0,0,.55);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,.40);
+  --shadow-md: 0 8px 24px rgba(0,0,0,.32);
+}
 
-      --ink:#0b1220;
-      --muted: rgba(255,255,255,.78);
-      --muted2: rgba(255,255,255,.64);
-      --stroke: rgba(255,255,255,.14);
+/* ─── RESET / BASE ───────────────────────────────────────── */
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'DM Sans', system-ui, sans-serif;
+  background:var(--black);
+  color:var(--text-primary);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+button,input,select,textarea{font-family:inherit;}
 
-      --shadow: 0 24px 70px rgba(0,0,0,.40);
-      --shadow2: 0 14px 48px rgba(0,0,0,.30);
+/* ─── TEXTURE ────────────────────────────────────────────── */
+body::before{
+  content:'';position:fixed;inset:0;
+  background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="4" stitchTiles="stitch"/></filter><rect width="200" height="200" filter="url(%23n)" opacity=".07"/></svg>');
+  mix-blend-mode:overlay;opacity:.4;pointer-events:none;z-index:0;
+}
 
-      --radius-xl: 22px;
-      --radius-lg: 18px;
-      --radius-md: 14px;
+/* ─── LAYOUT ─────────────────────────────────────────────── */
+.wrap{width:min(var(--maxw), calc(100% - 56px));margin:0 auto;}
+section{position:relative;z-index:1;}
+.serif{font-family:'Playfair Display',Georgia,serif;}
 
-      --maxw: 1140px;
-    }
+/* ─── NAV ────────────────────────────────────────────────── */
+.nav{
+  position:sticky;top:0;z-index:100;
+  backdrop-filter:blur(20px) saturate(140%);
+  background:linear-gradient(180deg,rgba(7,16,10,.88),rgba(7,16,10,.60));
+  border-bottom:1px solid rgba(90,144,104,.18);
+}
+.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.brand{
+  display:flex;align-items:center;gap:14px;
+  font-family:'Playfair Display',serif;
+  font-weight:700;font-size:18px;letter-spacing:.3px;color:var(--ivory);
+}
+.brand-mark{
+  width:40px;height:40px;border-radius:14px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--sage),var(--pine));
+  border:1px solid rgba(90,144,104,.35);box-shadow:0 8px 20px rgba(0,0,0,.30);flex:0 0 auto;
+}
+.brand-mark svg{width:22px;height:22px;opacity:.95;}
+.nav-links{
+  display:none;gap:4px;align-items:center;
+  font-size:14px;font-weight:500;color:var(--text-muted);
+}
+.nav-links a{padding:9px 14px;border-radius:10px;transition:background .15s,color .15s;}
+.nav-links a:hover{background:rgba(90,144,104,.12);color:var(--text-primary);}
+.nav-actions{display:flex;gap:8px;align-items:center;flex-shrink:0;}
 
-    *{ box-sizing:border-box; }
-    html{ scroll-behavior:smooth; }
-    body{
-      margin:0;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:#fff;
-      background:
-        radial-gradient(1100px 700px at 20% 0%, rgba(46,224,122,.16), transparent 55%),
-        radial-gradient(1000px 700px at 85% 10%, rgba(34,197,94,.12), transparent 55%),
-        linear-gradient(180deg, var(--navy-975), var(--navy-900) 30%, #061628 100%);
-      overflow-x:hidden;
-    }
-    a{ color:inherit; text-decoration:none; }
-    img{ max-width:100%; display:block; }
-    button, input, select, textarea{ font-family:inherit; }
-    :focus-visible{ outline: 2px solid rgba(82,240,161,.75); outline-offset: 3px; border-radius: 10px; }
+/* ─── BUTTONS ────────────────────────────────────────────── */
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:12px 20px;border-radius:12px;font-size:14px;font-weight:600;
+  border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);
+  color:var(--text-primary);cursor:pointer;
+  transition:transform .15s,background .15s,border-color .15s,box-shadow .15s;
+  white-space:nowrap;user-select:none;
+}
+.btn svg{width:15px;height:15px;flex:0 0 auto;}
+.btn:hover{transform:translateY(-1px);background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.22);}
+.btn:active{transform:translateY(0);}
+.btn.primary{
+  background:linear-gradient(135deg,var(--sage),var(--pine));
+  border-color:rgba(90,144,104,.45);color:var(--ivory);
+  box-shadow:0 12px 28px rgba(34,68,40,.30);
+}
+.btn.primary:hover{background:linear-gradient(135deg,var(--moss),var(--sage));box-shadow:0 16px 36px rgba(34,68,40,.40);}
+.btn.gold{
+  background:linear-gradient(135deg,var(--gold),#a8883a);
+  border-color:rgba(201,168,76,.45);color:var(--black);font-weight:700;
+  box-shadow:0 12px 28px rgba(201,168,76,.20);
+}
+.btn.gold:hover{background:linear-gradient(135deg,var(--gold2),var(--gold));}
+.btn.ghost{background:transparent;border-color:rgba(90,144,104,.25);}
+.btn.sm{padding:9px 15px;font-size:13px;}
 
-    /* Layout */
-    .wrap{ width:min(var(--maxw), calc(100% - 44px)); margin:0 auto; }
-    .section{ padding: 92px 0; position:relative; }
-    .grid{ display:grid; gap:18px; }
+/* ─── SOCIAL BUTTONS ─────────────────────────────────────── */
+.social-btn{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:9px 13px;border-radius:11px;font-size:13px;font-weight:600;
+  border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);
+  color:var(--text-primary);cursor:pointer;white-space:nowrap;
+  transition:transform .15s,background .15s,border-color .15s;text-decoration:none;
+}
+.social-btn svg{width:15px;height:15px;flex:0 0 auto;}
+.social-btn:hover{transform:translateY(-1px);}
+.social-btn.fb{border-color:rgba(24,119,242,.28);background:rgba(24,119,242,.07);}
+.social-btn.fb:hover{background:rgba(24,119,242,.16);border-color:rgba(24,119,242,.45);}
+.social-btn.ig{border-color:rgba(225,48,108,.22);background:rgba(225,48,108,.06);}
+.social-btn.ig:hover{background:rgba(225,48,108,.15);border-color:rgba(225,48,108,.40);}
+.social-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+/* on mobile nav: icon-only; show label on wider screens */
+.social-label{display:none;}
+@media(min-width:920px){.social-label{display:inline;}}
 
-    /* Ambient accents */
-    .orb{
-      position:absolute;
-      width: 560px; height: 560px; border-radius: 50%;
-      background: radial-gradient(circle at 30% 30%, rgba(46,224,122,.34), rgba(34,197,94,.10), transparent 62%);
-      filter: blur(18px);
-      opacity:.9;
-      pointer-events:none;
-      transform: translate3d(0,0,0);
-    }
-    .orb.one{ top:-200px; left:-220px; }
-    .orb.two{ top: 40px; right:-260px; width: 680px; height: 680px; opacity:.65; }
-    .noise{
-      pointer-events:none;
-      position:fixed; inset:0;
-      background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" stitchTiles="stitch"/></filter><rect width="140" height="140" filter="url(%23n)" opacity=".14"/></svg>');
-      mix-blend-mode: overlay;
-      opacity:.35;
-      z-index:0;
-    }
+/* ─── HERO ───────────────────────────────────────────────── */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;}
+.hero-bg{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(175deg,rgba(7,16,10,.10) 0%,rgba(7,16,10,.65) 50%,rgba(7,16,10,.97) 100%),
+    url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=85&auto=format&fit=crop');
+  background-size:cover;background-position:center 40%;
+  transform:scale(1.03);filter:saturate(1.1) contrast(1.05);
+}
+.hero-bg-gradient{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 60% 40% at 80% 20%,rgba(90,144,104,.18),transparent 55%),
+    radial-gradient(ellipse 50% 60% at 10% 70%,rgba(34,68,40,.22),transparent 55%);
+}
+.hero-content{position:relative;z-index:2;padding:0 0 80px;}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--mint);padding:9px 16px;border-radius:999px;
+  border:1px solid rgba(90,144,104,.35);background:rgba(13,26,14,.55);
+  backdrop-filter:blur(10px);margin-bottom:24px;
+}
+.hero-eyebrow .dot{
+  width:7px;height:7px;border-radius:50%;background:var(--leaf);
+  box-shadow:0 0 0 5px rgba(125,191,138,.18);
+  animation:pulse 2.4s ease infinite;
+}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 5px rgba(125,191,138,.18);}50%{box-shadow:0 0 0 8px rgba(125,191,138,.08);}}
+h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(40px,6vw,82px);line-height:1.02;letter-spacing:-.025em;
+  color:var(--ivory);max-width:15ch;margin-bottom:24px;
+}
+h1 em{
+  font-style:normal;
+  background:linear-gradient(135deg,var(--mint),var(--leaf));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero-sub{font-size:clamp(16px,1.6vw,19px);line-height:1.65;color:var(--text-muted);max-width:52ch;margin-bottom:36px;}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:44px;}
+.hero-trust{display:flex;flex-wrap:wrap;gap:10px;padding-top:28px;border-top:1px solid rgba(90,144,104,.20);}
+.trust-pill{font-size:12px;font-weight:500;color:var(--text-muted);padding:8px 14px;border-radius:999px;border:1px solid rgba(90,144,104,.20);background:rgba(13,26,14,.40);}
+.hero-float{
+  position:absolute;bottom:100px;right:0;width:min(320px,calc(100vw - 40px));
+  background:rgba(13,26,14,.70);border:1px solid rgba(90,144,104,.25);
+  border-radius:var(--radius-xl);backdrop-filter:blur(16px);padding:20px;
+  box-shadow:var(--shadow-xl);display:none;
+}
+.hero-float .fl-title{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--leaf);margin-bottom:16px;}
+.fl-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.fl-stat{background:rgba(7,16,10,.45);border:1px solid rgba(90,144,104,.18);border-radius:14px;padding:14px;}
+.fl-stat .fl-label{font-size:11px;font-weight:600;color:var(--text-dim);margin-bottom:6px;}
+.fl-stat .fl-val{font-size:13px;font-weight:700;color:var(--text-primary);line-height:1.4;}
 
-    /* Nav */
-    .nav{
-      position:sticky; top:0; z-index:60;
-      backdrop-filter: blur(14px);
-      background: linear-gradient(180deg, rgba(5,15,28,.80), rgba(5,15,28,.50));
-      border-bottom: 1px solid rgba(255,255,255,.08);
-    }
-    .nav-inner{
-      height:72px;
-      display:flex; align-items:center; justify-content:space-between;
-      gap:14px;
-    }
-    .brand{
-      display:flex; align-items:center; gap:10px;
-      font-weight:900; letter-spacing:.2px;
-    }
-    .mark{
-      width:38px; height:38px; border-radius:14px;
-      background: radial-gradient(circle at 30% 30%, rgba(46,224,122,.92), rgba(34,197,94,.32)),
-                  linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,255,255,.06));
-      border:1px solid rgba(255,255,255,.18);
-      box-shadow: 0 12px 28px rgba(0,0,0,.25);
-      display:grid; place-items:center;
-    }
-    .mark svg{ opacity:.95; }
+/* ─── SECTION TITLES ─────────────────────────────────────── */
+.section-kicker{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--leaf);margin-bottom:14px;}
+.h2{font-family:'Playfair Display',serif;font-size:clamp(30px,3.5vw,46px);line-height:1.08;letter-spacing:-.02em;color:var(--ivory);margin-bottom:16px;}
+.lead{font-size:clamp(15px,1.4vw,17px);line-height:1.7;color:var(--text-muted);max-width:64ch;margin-bottom:0;}
+.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(90,144,104,.25),transparent);margin:0;}
 
-    .nav-links{
-      display:none;
-      gap:18px;
-      align-items:center;
-      color:rgba(255,255,255,.86);
-      font-weight:700;
-      font-size:14px;
-    }
-    .nav-links a{ padding:10px 10px; border-radius:12px; }
-    .nav-links a:hover{ background: rgba(255,255,255,.06); }
+/* ─── SERVICES ───────────────────────────────────────────── */
+.services-section{padding:100px 0;}
+.services-header{margin-bottom:56px;}
+.services-grid{display:grid;grid-template-columns:1fr;gap:2px;border:1px solid rgba(90,144,104,.18);border-radius:var(--radius-xl);overflow:hidden;background:rgba(90,144,104,.08);}
+.service-card{background:var(--dark);padding:36px;position:relative;transition:background .25s;}
+.service-card::after{content:'';position:absolute;bottom:0;left:36px;right:36px;height:1px;background:rgba(90,144,104,.12);}
+.service-card:last-child::after{display:none;}
+.service-card:hover{background:var(--forest);}
+.service-card-header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:16px;}
+.service-icon{width:44px;height:44px;border-radius:16px;flex:0 0 auto;display:grid;place-items:center;background:linear-gradient(135deg,rgba(90,144,104,.25),rgba(34,68,40,.15));border:1px solid rgba(90,144,104,.22);}
+.service-icon svg{width:20px;height:20px;stroke:var(--leaf);}
+.service-tag{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);padding:6px 12px;border-radius:999px;border:1px solid rgba(201,168,76,.25);background:rgba(201,168,76,.06);}
+.service-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;letter-spacing:-.01em;color:var(--ivory);margin-bottom:10px;}
+.service-desc{font-size:15px;line-height:1.68;color:var(--text-muted);margin-bottom:18px;}
+.service-pills{display:flex;flex-wrap:wrap;gap:8px;}
+.s-pill{font-size:12px;font-weight:500;color:var(--text-dim);padding:6px 12px;border-radius:999px;border:1px solid rgba(90,144,104,.18);background:rgba(90,144,104,.06);}
 
-    .nav-cta{ display:flex; gap:10px; align-items:center; }
+/* ─── PHOTO BAND ─────────────────────────────────────────── */
+.photo-band{position:relative;height:440px;overflow:hidden;}
+.photo-band-img{
+  position:absolute;inset:0;
+  background-image:linear-gradient(90deg,rgba(7,16,10,.88) 0%,rgba(7,16,10,.40) 50%,rgba(7,16,10,.75) 100%),url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1800&q=80&auto=format&fit=crop');
+  background-size:cover;background-position:center;transform:scale(1.04);filter:saturate(1.15) contrast(1.08);
+}
+.photo-band-content{position:relative;z-index:2;height:100%;display:flex;align-items:center;}
+.pb-inner{max-width:600px;}
+.pb-quote{font-family:'Playfair Display',serif;font-size:clamp(22px,3vw,36px);line-height:1.25;color:var(--ivory);margin-bottom:20px;}
+.pb-quote span{color:var(--leaf);}
 
-    /* Mobile menu */
-    .burger{
-      display:inline-flex;
-      align-items:center; justify-content:center;
-      width:44px; height:44px;
-      border-radius: 14px;
-      border:1px solid rgba(255,255,255,.16);
-      background: rgba(255,255,255,.06);
-      color:#fff;
-      cursor:pointer;
-      transition: transform .15s ease, background .15s ease, border-color .15s ease;
-    }
-    .burger:hover{ transform: translateY(-1px); background: rgba(255,255,255,.09); border-color: rgba(255,255,255,.22); }
-    .burger svg{ width:18px; height:18px; }
+/* ─── WHY SECTION ────────────────────────────────────────── */
+.why-section{padding:100px 0;}
+.why-grid{display:grid;grid-template-columns:1fr;gap:24px;margin-top:56px;}
+.why-visual{position:relative;border-radius:var(--radius-xl);overflow:hidden;border:1px solid rgba(90,144,104,.18);min-height:400px;}
+.why-img{
+  position:absolute;inset:0;
+  background-image:linear-gradient(180deg,rgba(7,16,10,.15) 0%,rgba(7,16,10,.88) 100%),url('https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=1200&q=80&auto=format&fit=crop');
+  background-size:cover;background-position:center;filter:saturate(1.10);
+}
+.why-img-overlay{position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(90,144,104,.18),transparent 60%);}
+.why-cards-bottom{position:absolute;bottom:0;left:0;right:0;padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.mini-stat{background:rgba(7,16,10,.65);border:1px solid rgba(90,144,104,.22);border-radius:16px;padding:14px;backdrop-filter:blur(12px);}
+.mini-stat .ms-label{font-size:11px;font-weight:600;color:var(--text-dim);margin-bottom:5px;}
+.mini-stat .ms-val{font-size:13px;font-weight:700;color:var(--text-primary);line-height:1.35;}
+.why-benefits{display:grid;gap:4px;}
+.benefit-row{display:flex;align-items:flex-start;gap:14px;padding:20px;background:var(--dark);border-radius:var(--radius-lg);border:1px solid rgba(90,144,104,.12);transition:border-color .2s,background .2s;}
+.benefit-row:hover{background:var(--forest);border-color:rgba(90,144,104,.25);}
+.benefit-num{width:32px;height:32px;border-radius:10px;flex:0 0 auto;display:grid;place-items:center;background:rgba(90,144,104,.14);border:1px solid rgba(90,144,104,.25);font-weight:800;font-size:13px;color:var(--leaf);}
+.benefit-title{font-size:15px;font-weight:700;color:var(--ivory);margin-bottom:4px;}
+.benefit-desc{font-size:13px;line-height:1.6;color:var(--text-muted);}
 
-    .drawer-backdrop{
-      position:fixed; inset:0;
-      background: rgba(0,0,0,.55);
-      opacity:0;
-      pointer-events:none;
-      transition: opacity .18s ease;
-      z-index:80;
-    }
-    .drawer{
-      position:fixed;
-      top:0; right:0;
-      height:100vh;
-      width:min(380px, 92vw);
-      background: linear-gradient(180deg, rgba(11,31,53,.98), rgba(7,22,40,.98));
-      border-left: 1px solid rgba(255,255,255,.10);
-      box-shadow: 0 30px 90px rgba(0,0,0,.55);
-      transform: translateX(102%);
-      transition: transform .22s ease;
-      z-index:90;
-      padding: 18px;
-      display:flex;
-      flex-direction:column;
-      gap:12px;
-    }
-    .drawer.open{ transform: translateX(0); }
-    .drawer-backdrop.open{
-      opacity:1;
-      pointer-events:auto;
-    }
-    .drawer-top{
-      display:flex; align-items:center; justify-content:space-between; gap:12px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid rgba(255,255,255,.10);
-    }
-    .drawer-nav{
-      display:grid;
-      gap:8px;
-      padding-top: 6px;
-    }
-    .drawer-nav a{
-      padding: 12px 12px;
-      border-radius: 14px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      font-weight:800;
-      color: rgba(255,255,255,.92);
-    }
-    .drawer-nav a:hover{ background: rgba(255,255,255,.07); }
-    .drawer-foot{
-      margin-top:auto;
-      border-top: 1px solid rgba(255,255,255,.10);
-      padding-top: 12px;
-      color: rgba(255,255,255,.70);
-      font-size: 13px;
-      line-height:1.6;
-    }
+/* ─── PROCESS ────────────────────────────────────────────── */
+.process-section{padding:100px 0;}
+.process-grid{display:grid;grid-template-columns:1fr;gap:2px;margin-top:56px;border:1px solid rgba(90,144,104,.18);border-radius:var(--radius-xl);overflow:hidden;background:rgba(90,144,104,.06);}
+.process-step{background:var(--dark);padding:32px 36px;display:flex;align-items:flex-start;gap:20px;transition:background .2s;}
+.process-step:hover{background:var(--forest);}
+.p-num{width:44px;height:44px;border-radius:14px;flex:0 0 auto;display:grid;place-items:center;font-family:'Playfair Display',serif;font-size:18px;font-weight:900;color:var(--leaf);background:rgba(90,144,104,.12);border:1px solid rgba(90,144,104,.25);}
+.p-title{font-size:17px;font-weight:700;color:var(--ivory);margin-bottom:7px;}
+.p-desc{font-size:14px;line-height:1.65;color:var(--text-muted);}
 
-    /* Buttons */
-    .btn{
-      border:1px solid rgba(255,255,255,.16);
-      background: rgba(255,255,255,.06);
-      color:#fff;
-      padding: 11px 14px;
-      border-radius: 14px;
-      font-weight:800;
-      font-size:14px;
-      display:inline-flex; align-items:center; gap:10px;
-      cursor:pointer;
-      transition: transform .15s ease, background .15s ease, border-color .15s ease;
-      user-select:none;
-      white-space:nowrap;
-    }
-    .btn:hover{ transform: translateY(-1px); background: rgba(255,255,255,.09); border-color: rgba(255,255,255,.22); }
-    .btn:active{ transform: translateY(0px); }
-    .btn.primary{
-      background: linear-gradient(135deg, rgba(46,224,122,.96), rgba(34,197,94,.78));
-      color:#04130a;
-      border-color: rgba(46,224,122,.45);
-      box-shadow: 0 16px 40px rgba(34,197,94,.18);
-    }
-    .btn.primary:hover{ background: linear-gradient(135deg, rgba(82,240,161,.96), rgba(34,197,94,.86)); }
-    .btn.ghost{ background: transparent; }
-    .btn.icon{ padding: 11px 12px; }
-    .btn svg{ width:16px; height:16px; }
+/* ─── PHOTO GRID ─────────────────────────────────────────── */
+.photo-grid-section{padding:40px 0 100px;}
+.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.pg-item{border-radius:var(--radius-lg);overflow:hidden;border:1px solid rgba(90,144,104,.15);position:relative;aspect-ratio:4/3;}
+.pg-item:first-child{grid-column:span 2;aspect-ratio:2/1;}
+.pg-img{position:absolute;inset:0;background-size:cover;background-position:center;filter:saturate(1.1) contrast(1.05);transition:transform .6s ease;}
+.pg-item:hover .pg-img{transform:scale(1.04);}
+.pg-item:nth-child(1) .pg-img{background-image:url('https://images.unsplash.com/photo-1558618047-3c8c76ca7d73?w=1200&q=80&auto=format&fit=crop');}
+.pg-item:nth-child(2) .pg-img{background-image:url('https://images.unsplash.com/photo-1590590036328-c5a7d9fa7c1f?w=900&q=80&auto=format&fit=crop');}
+.pg-item:nth-child(3) .pg-img{background-image:url('https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=900&q=80&auto=format&fit=crop');}
+.pg-item:nth-child(4) .pg-img{background-image:url('https://images.unsplash.com/photo-1444858291040-58f756a3bdd6?w=900&q=80&auto=format&fit=crop');}
+.pg-cap{position:absolute;bottom:0;left:0;right:0;padding:10px 14px 12px;background:linear-gradient(0deg,rgba(7,16,10,.75),transparent);font-size:12px;font-weight:600;color:var(--text-muted);}
 
-    /* Hero */
-    .hero{ padding: 54px 0 26px; position:relative; z-index:1; }
-    .hero-grid{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap: 22px;
-      align-items:stretch;
-    }
-    .kicker{
-      display:inline-flex; gap:10px; align-items:center;
-      font-weight:800;
-      color: rgba(255,255,255,.84);
-      font-size: 13px;
-      letter-spacing:.2px;
-      padding: 8px 12px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.05);
-      border-radius: 999px;
-      width: fit-content;
-    }
-    .kicker .dot{
-      width:8px; height:8px; border-radius:50%;
-      background: var(--green-500);
-      box-shadow: 0 0 0 6px rgba(46,224,122,.12);
-    }
-    h1{
-      margin: 14px 0 10px;
-      font-size: clamp(34px, 4.4vw, 58px);
-      line-height: 1.03;
-      letter-spacing: -0.025em;
-    }
-    .sub{
-      margin: 0 0 18px;
-      font-size: 16px;
-      line-height: 1.68;
-      color: rgba(255,255,255,.78);
-      max-width: 62ch;
-    }
-    .hero-actions{
-      display:flex; flex-wrap:wrap; gap:12px; align-items:center;
-      margin-top: 14px;
-    }
-    .trust{
-      display:flex; flex-wrap:wrap; gap:10px;
-      margin-top: 18px;
-      color: rgba(255,255,255,.72);
-      font-size: 13px;
-    }
-    .pill{
-      padding: 9px 12px;
-      border-radius: 999px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-    }
+/* ─── FAQ ────────────────────────────────────────────────── */
+.faq-section{padding:100px 0;}
+.faq-grid{display:grid;gap:8px;margin-top:48px;}
+details{border:1px solid rgba(90,144,104,.15);background:var(--dark);border-radius:var(--radius-lg);overflow:hidden;transition:border-color .2s;}
+details[open]{border-color:rgba(90,144,104,.30);}
+summary{list-style:none;cursor:pointer;font-size:15px;font-weight:600;color:var(--ivory);padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;user-select:none;}
+summary::-webkit-details-marker{display:none;}
+.sum-icon{width:26px;height:26px;border-radius:8px;flex:0 0 auto;display:grid;place-items:center;background:rgba(90,144,104,.12);border:1px solid rgba(90,144,104,.20);color:var(--leaf);font-size:16px;transition:transform .2s,background .2s;}
+details[open] .sum-icon{transform:rotate(45deg);background:rgba(90,144,104,.22);}
+details p{padding:0 24px 20px;font-size:14px;line-height:1.7;color:var(--text-muted);}
 
-    .hero-card{
-      position:relative;
-      border-radius: var(--radius-xl);
-      overflow:hidden;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      box-shadow: var(--shadow);
-      min-height: 370px;
-      isolation:isolate;
-    }
-    .hero-media{
-      position:absolute; inset:0;
-      background:
-        linear-gradient(180deg, rgba(5,15,28,.18), rgba(5,15,28,.92)),
-        url("https://source.unsplash.com/6A6RolEwrvc/1600x900") center/cover no-repeat;
-      transform: scale(1.03);
-      filter: saturate(1.1) contrast(1.06);
-    }
-    .hero-overlay{
-      position:absolute; inset:0;
-      background:
-        radial-gradient(900px 520px at 70% 10%, rgba(46,224,122,.20), transparent 55%),
-        radial-gradient(700px 520px at 25% 70%, rgba(34,197,94,.14), transparent 55%);
-      mix-blend-mode: screen;
-      opacity:.95;
-    }
-    .hero-float{
-      position:absolute; left:18px; right:18px; bottom:18px;
-      display:grid; gap:12px;
-    }
-    .statbar{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:12px;
-    }
-    .stat{
-      border-radius: 18px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(5,15,28,.58);
-      backdrop-filter: blur(10px);
-      padding: 14px 14px;
-    }
-    .stat .label{ color: rgba(255,255,255,.76); font-size: 12px; font-weight:800; }
-    .stat .value{ margin-top:6px; font-size: 14px; font-weight:900; letter-spacing:.2px; }
+/* ─── SERVICE AREA ───────────────────────────────────────── */
+.area-section{padding:80px 0;}
+.area-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin-top:36px;}
+.area-pill{padding:14px 18px;border-radius:var(--radius-md);border:1px solid rgba(90,144,104,.15);background:var(--dark);font-size:14px;font-weight:500;color:var(--text-muted);transition:border-color .2s,background .2s,color .2s;}
+.area-pill:hover{border-color:rgba(90,144,104,.30);background:var(--forest);color:var(--text-primary);}
+.area-check{color:var(--leaf);margin-right:6px;}
 
-    /* Section headings */
-    .h2{
-      font-size: clamp(26px, 2.7vw, 38px);
-      letter-spacing:-0.02em;
-      margin:0 0 10px;
-    }
-    .lead{
-      color: rgba(255,255,255,.76);
-      line-height: 1.72;
-      margin: 0 0 22px;
-      max-width: 72ch;
-    }
+/* ─── CONTACT ────────────────────────────────────────────── */
+.contact-section{padding:100px 0;}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:24px;margin-top:48px;}
+.contact-info{background:var(--forest);border:1px solid rgba(90,144,104,.20);border-radius:var(--radius-xl);overflow:hidden;position:relative;}
+.ci-photo{height:200px;background-image:linear-gradient(180deg,rgba(7,16,10,.2),rgba(13,26,14,.92)),url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=900&q=80&auto=format&fit=crop');background-size:cover;background-position:center top;}
+.ci-body{padding:28px;}
+.ci-tag{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+.ci-heading{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--ivory);margin-bottom:10px;line-height:1.2;}
+.ci-desc{font-size:14px;line-height:1.65;color:var(--text-muted);margin-bottom:24px;}
+.ci-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px;}
+.ci-hr{height:1px;background:rgba(90,144,104,.15);margin:20px 0;}
+.ci-detail{font-size:13px;color:var(--text-dim);line-height:1.6;}
+.ci-detail strong{color:var(--text-muted);}
+.contact-form-card{background:var(--dark);border:1px solid rgba(90,144,104,.18);border-radius:var(--radius-xl);padding:32px;}
+.form-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--ivory);margin-bottom:24px;}
+.form{display:grid;gap:14px;}
+.field{display:grid;gap:8px;}
+label{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--text-dim);}
+input,textarea,select{border-radius:12px;border:1px solid rgba(90,144,104,.18);background:rgba(7,16,10,.55);color:var(--text-primary);padding:13px 16px;outline:none;font-size:14px;transition:border-color .15s,background .15s;}
+input::placeholder,textarea::placeholder{color:var(--text-dim);}
+input:focus,textarea:focus,select:focus{border-color:rgba(90,144,104,.55);background:rgba(7,16,10,.70);}
+textarea{min-height:110px;resize:vertical;}
+.row2{display:grid;grid-template-columns:1fr;gap:14px;}
+.hint{font-size:12px;color:var(--text-dim);line-height:1.5;margin-top:2px;}
+/* checkbox rows */
+.check-label{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:400;text-transform:none;letter-spacing:0;color:var(--text-muted);cursor:pointer;}
+.check-label input[type="checkbox"]{width:16px;height:16px;flex:0 0 auto;accent-color:var(--sage);padding:0;border:none;background:none;}
 
-    /* Cards */
-    .card{
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      border-radius: var(--radius-xl);
-      overflow:hidden;
-      box-shadow: var(--shadow2);
-    }
-    .card.pad{ padding: 18px; }
-    .card .topline{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:12px;
-      margin-bottom: 10px;
-    }
-    .badge{
-      font-size: 12px;
-      font-weight:900;
-      color: rgba(255,255,255,.88);
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.05);
-      padding: 7px 10px;
-      border-radius: 999px;
-      width:fit-content;
-    }
-    .iconchip{
-      width:40px; height:40px;
-      border-radius: 16px;
-      display:grid; place-items:center;
-      border: 1px solid rgba(255,255,255,.16);
-      background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
-    }
-    .iconchip svg{ width:18px; height:18px; opacity:.92; }
+/* ─── FORM STATES ────────────────────────────────────────── */
+.form-success{display:none;text-align:center;padding:44px 20px;}
+.form-success.show{display:block;}
+.fs-icon{width:56px;height:56px;border-radius:50%;background:rgba(90,144,104,.15);border:1px solid rgba(90,144,104,.30);display:grid;place-items:center;margin:0 auto 18px;}
+.form-success h3{font-family:'Playfair Display',serif;font-size:22px;color:var(--ivory);margin-bottom:10px;}
+.form-success p{font-size:14px;color:var(--text-muted);line-height:1.65;}
+.form-success a{color:var(--leaf);}
+.form-error{display:none;padding:12px 16px;border-radius:10px;background:rgba(180,50,50,.10);border:1px solid rgba(180,50,50,.25);font-size:13px;color:rgba(255,160,160,.85);margin-top:4px;}
+.form-error.show{display:block;}
+.form-error a{color:rgba(255,180,180,.9);}
 
-    /* Services */
-    .services{
-      grid-template-columns: 1fr;
-      gap:14px;
-    }
-    .service-title{
-      font-weight: 950;
-      font-size: 16px;
-      margin: 6px 0 6px;
-      letter-spacing:.1px;
-    }
-    .service-desc{
-      color: rgba(255,255,255,.74);
-      line-height: 1.6;
-      margin: 0;
-      font-size: 14px;
-    }
-    .service-note{
-      margin-top: 12px;
-      display:flex; gap:10px; flex-wrap:wrap;
-      color: rgba(255,255,255,.74);
-      font-size: 12px;
-    }
+/* ─── CTA ────────────────────────────────────────────────── */
+.cta-section{padding:40px 0 80px;}
+.cta-card{border-radius:var(--radius-xl);overflow:hidden;position:relative;min-height:280px;display:flex;align-items:center;border:1px solid rgba(90,144,104,.25);box-shadow:var(--shadow-xl);}
+.cta-bg{position:absolute;inset:0;background-image:linear-gradient(135deg,rgba(7,16,10,.96) 0%,rgba(13,26,14,.80) 50%,rgba(7,16,10,.90) 100%),url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=80&auto=format&fit=crop');background-size:cover;background-position:center;}
+.cta-accent{position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 70% 50%,rgba(90,144,104,.18),transparent 60%);}
+.cta-content{position:relative;z-index:2;padding:48px;}
+.cta-sub{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.cta-heading{font-family:'Playfair Display',serif;font-size:clamp(26px,3.5vw,44px);line-height:1.10;letter-spacing:-.02em;color:var(--ivory);margin-bottom:24px;max-width:18ch;}
+.cta-actions{display:flex;flex-wrap:wrap;gap:12px;}
 
-    /* Photo strip (quick “luxury” visual) */
-    .strip{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-top: 18px;
-    }
-    .strip .shot{
-      border-radius: 18px;
-      overflow:hidden;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.03);
-      min-height: 120px;
-      box-shadow: 0 12px 34px rgba(0,0,0,.24);
-      position:relative;
-      isolation:isolate;
-    }
-    .strip .shot:before{
-      content:"";
-      position:absolute; inset:0;
-      background: linear-gradient(180deg, rgba(5,15,28,.12), rgba(5,15,28,.60));
-      z-index:1;
-      pointer-events:none;
-    }
-    .strip .shot .bg{
-      position:absolute; inset:0;
-      background-position:center;
-      background-size:cover;
-      transform: scale(1.03);
-      filter: saturate(1.06) contrast(1.06);
-    }
-    .strip .shot .cap{
-      position:absolute;
-      left:12px; right:12px; bottom:12px;
-      z-index:2;
-      font-weight:900;
-      font-size: 12px;
-      letter-spacing:.2px;
-      color: rgba(255,255,255,.92);
-      display:flex; justify-content:space-between; gap:10px;
-    }
-    .strip .shot .cap span:last-child{
-      color: rgba(255,255,255,.72);
-      font-weight:800;
-    }
+/* ─── FOOTER ─────────────────────────────────────────────── */
+footer{padding:28px 0 44px;border-top:1px solid rgba(90,144,104,.12);color:var(--text-dim);font-size:13px;}
+.footer-inner{display:grid;gap:20px;}
+.footer-top{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center;padding-bottom:20px;border-bottom:1px solid rgba(90,144,104,.10);}
+.footer-brand{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--text-muted);margin-bottom:4px;}
+.footer-tagline{font-size:12px;color:var(--text-dim);line-height:1.5;}
+.footer-bottom{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;}
+.footer-links{display:flex;flex-wrap:wrap;gap:16px;}
+.footer-links a{transition:color .15s;}
+.footer-links a:hover{color:var(--leaf);}
 
-    /* Top Dressing explainer */
-    .split{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-      align-items:stretch;
-    }
-    .diagram{
-      position:relative;
-      border-radius: var(--radius-xl);
-      overflow:hidden;
-      border: 1px solid rgba(255,255,255,.12);
-      background:
-        radial-gradient(800px 500px at 30% 20%, rgba(46,224,122,.12), transparent 60%),
-        linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-      padding: 18px;
-      min-height: 380px;
-      isolation:isolate;
-    }
-    .diagram .layers{
-      position:absolute; left:18px; right:18px; top:70px; bottom:18px;
-      display:grid; gap:12px;
-      align-content:start;
-      z-index:2;
-    }
-    .layer{
-      border-radius: 18px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(5,15,28,.52);
-      backdrop-filter: blur(10px);
-      padding: 14px;
-      display:flex; gap:12px; align-items:flex-start;
-      position:relative;
-      overflow:hidden;
-    }
-    .layer:before{
-      content:"";
-      position:absolute;
-      inset:-1px;
-      border-radius: 18px;
-      background: radial-gradient(240px 120px at 10% 10%, rgba(46,224,122,.18), transparent 60%);
-      opacity:.55;
-      pointer-events:none;
-    }
-    .layer .mini{
-      width:40px; height:40px; border-radius: 16px;
-      display:grid; place-items:center;
-      border:1px solid rgba(255,255,255,.16);
-      background: rgba(255,255,255,.06);
-      flex:0 0 auto;
-      font-size: 18px;
-    }
-    .layer h4{
-      margin: 0;
-      font-size: 14px;
-      font-weight: 950;
-      letter-spacing:.1px;
-    }
-    .layer p{
-      margin: 6px 0 0;
-      color: rgba(255,255,255,.74);
-      font-size: 13px;
-      line-height: 1.55;
-    }
-    .diagram .soil-bg{
-      position:absolute; inset:0;
-      background:
-        linear-gradient(180deg, rgba(5,15,28,.25), rgba(5,15,28,.92)),
-        url("https://source.unsplash.com/aF__KNQWMIQ/1400x900") center/cover no-repeat;
-      opacity:.48;
-      filter:saturate(1.05) contrast(1.05);
-      transform: scale(1.03);
-      z-index:0;
-    }
-    .diagram .titlebar{
-      position:relative;
-      display:flex; align-items:center; justify-content:space-between; gap:12px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid rgba(255,255,255,.10);
-      z-index:2;
-    }
-    .diagram .titlebar .small{
-      color: rgba(255,255,255,.72);
-      font-weight:800;
-      font-size: 12px;
-    }
+/* ─── REVEAL ─────────────────────────────────────────────── */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .65s ease,transform .65s ease;}
+.reveal.on{opacity:1;transform:translateY(0);}
+.reveal-delay-1{transition-delay:.08s;}
+.reveal-delay-2{transition-delay:.16s;}
+.reveal-delay-3{transition-delay:.24s;}
 
-    /* Before/After Slider */
-    .slider{
-      position:relative;
-      border-radius: var(--radius-xl);
-      overflow:hidden;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.03);
-      box-shadow: var(--shadow2);
-      min-height: 340px;
-      touch-action: none;
-      isolation:isolate;
-    }
-    .slider .img{
-      position:absolute; inset:0;
-      background-position:center;
-      background-size: cover;
-      filter: saturate(1.05) contrast(1.05);
-      transform: scale(1.02);
-    }
-    .slider .after{
-      background-image:
-        linear-gradient(180deg, rgba(5,15,28,.18), rgba(5,15,28,.72)),
-        url("https://source.unsplash.com/nkOEmdZ9O7s/1600x1000");
-    }
-    .slider .before-wrap{
-      position:absolute; inset:0;
-      width: 50%;
-      overflow:hidden;
-      z-index:2;
-    }
-    .slider .before{
-      background-image:
-        linear-gradient(180deg, rgba(5,15,28,.18), rgba(5,15,28,.72)),
-        url("https://source.unsplash.com/6A6RolEwrvc/1600x1000");
-    }
-    .slider .handle{
-      position:absolute; top:0; bottom:0;
-      left: calc(50% - 1px);
-      width: 2px;
-      background: rgba(255,255,255,.7);
-      box-shadow: 0 0 0 6px rgba(46,224,122,.14);
-      z-index:3;
-      pointer-events:none;
-    }
-    .slider .knob{
-      position:absolute;
-      top:50%;
-      left: calc(50% - 22px);
-      transform: translateY(-50%);
-      width: 44px; height: 44px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.22);
-      background: rgba(5,15,28,.68);
-      backdrop-filter: blur(10px);
-      display:grid; place-items:center;
-      box-shadow: 0 16px 40px rgba(0,0,0,.35);
-      cursor: grab;
-      z-index:4;
-    }
-    .slider .knob:active{ cursor: grabbing; }
-    .slider .labels{
-      position:absolute; top:14px; left:14px; right:14px;
-      display:flex; justify-content:space-between; align-items:center;
-      pointer-events:none;
-      z-index:4;
-    }
-    .tag{
-      font-weight:950;
-      font-size:12px;
-      letter-spacing:.2px;
-      padding: 8px 10px;
-      border-radius: 999px;
-      background: rgba(5,15,28,.68);
-      border: 1px solid rgba(255,255,255,.14);
-      color: rgba(255,255,255,.90);
-      backdrop-filter: blur(10px);
-    }
-    .slider .caption{
-      position:absolute; left:14px; right:14px; bottom:14px;
-      padding: 12px 12px;
-      border-radius: 18px;
-      border: 1px solid rgba(255,255,255,.14);
-      background: rgba(5,15,28,.66);
-      backdrop-filter: blur(10px);
-      color: rgba(255,255,255,.78);
-      font-size: 13px;
-      line-height:1.55;
-      z-index:4;
-    }
+/* ─── RESPONSIVE ─────────────────────────────────────────── */
+@media(min-width:740px){
+  .nav-links{display:flex;}
+  .hero-float{display:block;}
+  .why-grid{grid-template-columns:1fr 1fr;}
+  .contact-grid{grid-template-columns:.9fr 1.1fr;}
+  .row2{grid-template-columns:1fr 1fr;}
+  .services-grid{grid-template-columns:1fr 1fr;}
+  .service-card::after{bottom:unset;right:0;top:36px;left:unset;width:1px;height:calc(100% - 72px);background:rgba(90,144,104,.10);}
+  .service-card:nth-child(2n)::after{display:none;}
+}
+@media(min-width:960px){.process-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:739px){
+  .photo-grid{grid-template-columns:1fr 1fr;}
+  .pg-item:first-child{grid-column:span 2;}
+  .pg-item:nth-child(n+4){display:none;}
+  .cta-content{padding:36px 28px;}
+}
+</style>
 
-    /* Steps */
-    .steps{ grid-template-columns: 1fr; gap:14px; }
-    .step{ display:flex; gap:12px; align-items:flex-start; }
-    .num{
-      width:36px; height:36px; border-radius: 14px;
-      display:grid; place-items:center;
-      font-weight:950;
-      background: rgba(46,224,122,.14);
-      border: 1px solid rgba(46,224,122,.30);
-      color: rgba(255,255,255,.92);
-      flex:0 0 auto;
-    }
-    .step h4{ margin:0; font-size: 14px; font-weight:950; }
-    .step p{ margin:6px 0 0; color: rgba(255,255,255,.74); font-size: 13px; line-height:1.55; }
-
-    /* Testimonials */
-    .testimonials{ grid-template-columns: 1fr; gap:14px; }
-    .quote{
-      font-size: 14px;
-      line-height: 1.7;
-      color: rgba(255,255,255,.78);
-      margin: 6px 0 0;
-    }
-    .who{
-      margin-top: 12px;
-      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
-      color: rgba(255,255,255,.70);
-      font-size: 12px;
-      font-weight:800;
-    }
-
-    /* FAQ */
-    .faq{ display:grid; gap:12px; }
-    details{
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      border-radius: 18px;
-      padding: 14px 14px;
-    }
-    summary{
-      list-style:none;
-      cursor:pointer;
-      font-weight:950;
-      display:flex; align-items:center; justify-content:space-between; gap:12px;
-    }
-    summary::-webkit-details-marker{ display:none; }
-    .plus{
-      width:28px; height:28px;
-      border-radius: 10px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      display:grid; place-items:center;
-      color: rgba(255,255,255,.75);
-      font-weight:950;
-      flex:0 0 auto;
-      transition: transform .18s ease;
-    }
-    details[open] .plus{ transform: rotate(45deg); }
-    details p{
-      margin: 10px 0 0;
-      color: rgba(255,255,255,.74);
-      line-height:1.65;
-      font-size: 13px;
-    }
-
-    /* Contact */
-    .contact{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-      align-items:stretch;
-    }
-    .form{ display:grid; gap:12px; }
-    .field{ display:grid; gap:8px; }
-    label{
-      font-size: 12px;
-      font-weight: 950;
-      color: rgba(255,255,255,.80);
-    }
-    input, textarea, select{
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,.14);
-      background: rgba(5,15,28,.60);
-      color:#fff;
-      padding: 12px 12px;
-      outline:none;
-      transition: border-color .15s ease, background .15s ease;
-      font-size: 14px;
-    }
-    input:focus, textarea:focus, select:focus{
-      border-color: rgba(46,224,122,.55);
-      background: rgba(5,15,28,.70);
-    }
-    textarea{ min-height: 110px; resize: vertical; }
-    .row{ display:grid; grid-template-columns: 1fr; gap:12px; }
-    .hint{
-      margin: 2px 0 0;
-      font-size: 12px;
-      color: rgba(255,255,255,.62);
-      line-height:1.5;
-    }
-
-    /* Footer */
-    footer{
-      padding: 26px 0 44px;
-      border-top: 1px solid rgba(255,255,255,.10);
-      color: rgba(255,255,255,.62);
-      font-size: 13px;
-      position:relative;
-      z-index:1;
-    }
-    .footer-row{
-      display:flex; gap:12px; flex-wrap:wrap;
-      justify-content:space-between; align-items:center;
-    }
-
-    /* Sticky bottom CTA (mobile) */
-    .sticky-cta{
-      position:fixed;
-      left: 12px; right: 12px; bottom: 12px;
-      z-index:70;
-      display:flex;
-      gap:10px;
-      justify-content:space-between;
-      padding: 10px;
-      border-radius: 18px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(5,15,28,.78);
-      backdrop-filter: blur(12px);
-      box-shadow: 0 18px 48px rgba(0,0,0,.35);
-    }
-    .sticky-cta .btn{ flex:1; justify-content:center; }
-    .sticky-cta .btn.icon{ flex:0 0 auto; width: 46px; }
-
-    /* Reveal */
-    .reveal{
-      opacity:0;
-      transform: translateY(12px);
-      transition: opacity .6s ease, transform .6s ease;
-    }
-    .reveal.on{
-      opacity:1;
-      transform: translateY(0);
-    }
-
-    /* Reduced motion */
-    @media (prefers-reduced-motion: reduce){
-      html{ scroll-behavior:auto; }
-      .reveal{ opacity:1; transform:none; transition:none; }
-      .btn, .burger{ transition:none; }
-      .strip .shot .bg, .hero-media{ transform:none; }
-    }
-
-    /* Responsive */
-    @media (min-width: 860px){
-      .nav-links{ display:flex; }
-      .burger{ display:none; }
-
-      .hero-grid{ grid-template-columns: 1.1fr .9fr; gap: 18px; }
-      .services{ grid-template-columns: repeat(2, 1fr); }
-      .split{ grid-template-columns: 1.05fr .95fr; }
-      .steps{ grid-template-columns: repeat(2, 1fr); }
-      .testimonials{ grid-template-columns: repeat(3, 1fr); }
-      .contact{ grid-template-columns: 1.05fr .95fr; }
-      .row{ grid-template-columns: 1fr 1fr; }
-
-      .hero-card{ min-height: 430px; }
-      .slider{ min-height: 390px; }
-      .strip{ grid-template-columns: repeat(4, 1fr); }
-      .sticky-cta{ display:none; }
-    }
-
-    /* Helpers */
-    .muted{ color: rgba(255,255,255,.72); }
-    .hr{ height:1px; background: rgba(255,255,255,.10); margin: 16px 0; }
-  </style>
-
-  <!-- LocalBusiness schema -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"Luxury Turf Service",
-    "areaServed":"Davis County, UT and surrounding areas",
-    "email":"luxturfservice@gmail.com",
-    "telephone":"+1-385-424-8588",
-    "description":"Premium top dressing, aeration, overseeding, and soil building with organic options.",
-    "url":"https://www.luxuryturfservice.com/"
-  }
-  </script>
+<!-- ═══ SCHEMA ═══════════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LandscapingBusiness",
+  "name":"Luxury Turf Service",
+  "url":"https://www.luxuryturfservice.com/",
+  "telephone":"+1-385-424-8588",
+  "email":"luxturfservice@gmail.com",
+  "image":"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=85",
+  "description":"Premium top dressing, aeration, overseeding, and organic soil building for residential lawns in Davis County, Utah. Serving Farmington, Kaysville, Bountiful, Layton, Centerville, North Salt Lake, Syracuse, and surrounding communities.",
+  "priceRange":"$$",
+  "address":{"@type":"PostalAddress","addressLocality":"Farmington","addressRegion":"UT","postalCode":"84025","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":40.9108,"longitude":-111.8931},
+  "areaServed":[
+    {"@type":"City","name":"Farmington, UT"},{"@type":"City","name":"Kaysville, UT"},
+    {"@type":"City","name":"Bountiful, UT"},{"@type":"City","name":"Layton, UT"},
+    {"@type":"City","name":"Centerville, UT"},{"@type":"City","name":"North Salt Lake, UT"},
+    {"@type":"City","name":"Syracuse, UT"},{"@type":"City","name":"Fruit Heights, UT"},
+    {"@type":"City","name":"Clinton, UT"},{"@type":"City","name":"West Point, UT"},
+    {"@type":"City","name":"Woods Cross, UT"},{"@type":"County","name":"Davis County, UT"}
+  ],
+  "hasOfferCatalog":{"@type":"OfferCatalog","name":"Lawn Care Services","itemListElement":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Top Dressing","description":"Premium sand or sand/organic blend top dressing for lawn leveling, drainage, and turf density in Davis County, Utah."}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Core Aeration","description":"Core aeration to relieve soil compaction and improve water and nutrient penetration."}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Overseeding","description":"Overseeding for thicker, denser turf that naturally suppresses weeds."}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Organic Soil Building","description":"Organic soil amendments to improve microbial activity and long-term turf health."}}
+  ]},
+  "sameAs":["https://www.facebook.com/profile.php?id=61588613744813","https://www.instagram.com/luxuryturfservice/"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"What is lawn top dressing?","acceptedAnswer":{"@type":"Answer","text":"Top dressing is applying a thin, even layer of premium material — sand or a sand/organic blend — across the lawn and working it down into the canopy. It levels minor unevenness, improves drainage, and creates a healthier environment for turf roots over time."}},
+    {"@type":"Question","name":"Does top dressing help with pooling water or dry spots?","acceptedAnswer":{"@type":"Answer","text":"In many cases, yes. A sand-based top dressing improves infiltration and reduces surface pooling caused by minor compaction or grade issues."}},
+    {"@type":"Question","name":"When is the best time for aeration and overseeding in Utah?","acceptedAnswer":{"@type":"Answer","text":"Utah's best windows are typically early fall for cool-season grasses. Aeration, top dressing, and overseeding together is one of the fastest paths to a noticeably thicker lawn."}},
+    {"@type":"Question","name":"Is top dressing safe for kids and pets?","acceptedAnswer":{"@type":"Answer","text":"We offer organic options and a soil-first approach. If you have specific concerns, mention it during your quote request and we'll tailor the blend accordingly."}},
+    {"@type":"Question","name":"What areas in Utah does Luxury Turf Service serve?","acceptedAnswer":{"@type":"Answer","text":"We serve Davis County and surrounding northern Utah communities including Farmington, Kaysville, Bountiful, Layton, Centerville, North Salt Lake, Syracuse, Fruit Heights, Clinton, West Point, and Woods Cross."}}
+  ]
+}
+</script>
 </head>
-
 <body>
-  <div class="noise" aria-hidden="true"></div>
 
-  <!-- Mobile Drawer -->
-  <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
-  <aside class="drawer" id="drawer" aria-label="Mobile menu" aria-hidden="true">
-    <div class="drawer-top">
-      <div class="brand" style="gap:10px;">
-        <span class="mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M12 3c4.5 3.2 7 7 7 10.7A7 7 0 1 1 5 13.7C5 10 7.5 6.2 12 3Z" stroke="rgba(7,22,40,.9)" stroke-width="1.8"/>
-            <path d="M8 14c1.2-2.1 3.2-3.3 4-3.7.8.4 2.8 1.6 4 3.7" stroke="rgba(7,22,40,.9)" stroke-width="1.8" stroke-linecap="round"/>
-          </svg>
-        </span>
-        <div style="display:grid; line-height:1.1;">
-          <span style="font-weight:950;">Luxury Turf Service</span>
-          <span style="font-size:12px; color:rgba(255,255,255,.70); font-weight:800;">Davis County, UT</span>
-        </div>
-      </div>
-      <button class="burger" id="drawerClose" aria-label="Close menu">
-        <svg viewBox="0 0 24 24" fill="none">
-          <path d="M6 6 18 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-          <path d="M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+<!-- ── NAV ──────────────────────────────────────────────── -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="rgba(240,235,224,.9)" stroke-width="1.8">
+          <path d="M12 3c4.5 3.2 7 7 7 10.7A7 7 0 1 1 5 13.7C5 10 7.5 6.2 12 3Z"/>
+          <path d="M8 14c1.2-2.1 3.2-3.3 4-3.7.8.4 2.8 1.6 4 3.7" stroke-linecap="round"/>
         </svg>
-      </button>
-    </div>
-
-    <nav class="drawer-nav">
-      <a href="#services" data-close-drawer>Services</a>
-      <a href="#topdressing" data-close-drawer>Why Top Dressing</a>
-      <a href="#process" data-close-drawer>Process</a>
-      <a href="#faq" data-close-drawer>FAQ</a>
-      <a href="#contact" data-close-drawer>Request a Quote</a>
+      </div>
+      Luxury Turf Service
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#why">Why Top Dressing</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
     </nav>
-
-    <div style="display:flex; gap:10px; flex-wrap:wrap; padding-top:8px;">
-      <a class="btn primary" href="#contact" data-close-drawer>
-        <svg viewBox="0 0 24 24" fill="none"><path d="M4 7.5 12 12l8-4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M5.5 6h13A1.5 1.5 0 0 1 20 7.5v9A1.5 1.5 0 0 1 18.5 18h-13A1.5 1.5 0 0 1 4 16.5v-9A1.5 1.5 0 0 1 5.5 6Z" stroke="currentColor" stroke-width="1.7"/></svg>
-        Quote
+    <div class="nav-actions">
+      <a class="social-btn fb" href="https://www.facebook.com/profile.php?id=61588613744813" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        <span class="social-label">Facebook</span>
       </a>
-      <a class="btn" href="tel:+13854248588">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M6.5 3.5h3l1.2 4-2 1.2c1.3 2.6 3.4 4.7 6 6l1.2-2 4 1.2v3c0 1.1-.9 2-2 2C10.7 21 3 13.3 3 5.5c0-1.1.9-2 2-2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+      <a class="social-btn ig" href="https://www.instagram.com/luxuryturfservice/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" stroke-linejoin="round"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        <span class="social-label">Instagram</span>
+      </a>
+      <a class="btn ghost sm" href="tel:+13854248588">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6.5 3.5h3l1.2 4-2 1.2c1.3 2.6 3.4 4.7 6 6l1.2-2 4 1.2v3c0 1.1-.9 2-2 2C10.7 21 3 13.3 3 5.5c0-1.1.9-2 2-2Z" stroke-linejoin="round"/></svg>
         Call
       </a>
-      <a class="btn" href="sms:+13854248588">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7A2.5 2.5 0 0 1 17.5 16H9l-4 4v-4H6.5A2.5 2.5 0 0 1 4 13.5v-7Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-        Text
-      </a>
+      <a class="btn primary sm" href="#contact">Request a Quote</a>
     </div>
+  </div>
+</header>
 
-    <div class="drawer-foot">
-      <div style="font-weight:900; margin-bottom:4px;">Luxury finish. Soil-first.</div>
-      Organic options available • Pet + kid friendly focus • No pricing games — we quote your property.
+<!-- ── HERO ──────────────────────────────────────────────── -->
+<main id="top">
+<section class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-bg-gradient"></div>
+  <div class="hero-float" aria-hidden="true">
+    <div class="fl-title">At a Glance</div>
+    <div class="fl-stats">
+      <div class="fl-stat"><div class="fl-label">Core Service</div><div class="fl-val">Top Dressing + Soil Health</div></div>
+      <div class="fl-stat"><div class="fl-label">Materials</div><div class="fl-val">Premium sand or sand/organic blend</div></div>
+      <div class="fl-stat"><div class="fl-label">Service Area</div><div class="fl-val">Davis County & Surrounding Areas</div></div>
+      <div class="fl-stat"><div class="fl-label">Options</div><div class="fl-val">Organic • Pet + Kid-Friendly Focus</div></div>
     </div>
-  </aside>
-
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a class="brand" href="#top" aria-label="Luxury Turf Service home">
-        <span class="mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M12 3c4.5 3.2 7 7 7 10.7A7 7 0 1 1 5 13.7C5 10 7.5 6.2 12 3Z" stroke="rgba(7,22,40,.9)" stroke-width="1.8"/>
-            <path d="M8 14c1.2-2.1 3.2-3.3 4-3.7.8.4 2.8 1.6 4 3.7" stroke="rgba(7,22,40,.9)" stroke-width="1.8" stroke-linecap="round"/>
-          </svg>
-        </span>
-        <span>Luxury Turf Service</span>
-      </a>
-
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#topdressing">Why Top Dressing</a>
-        <a href="#process">Process</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Request a Quote</a>
-      </nav>
-
-      <div class="nav-cta">
-        <button class="burger" id="drawerOpen" aria-label="Open menu">
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M5 7h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-            <path d="M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-            <path d="M5 17h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-          </svg>
-        </button>
-
-        <a class="btn ghost" href="tel:+13854248588" aria-label="Call Us">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M6.5 3.5h3l1.2 4-2 1.2c1.3 2.6 3.4 4.7 6 6l1.2-2 4 1.2v3c0 1.1-.9 2-2 2C10.7 21 3 13.3 3 5.5c0-1.1.9-2 2-2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-          Call
-        </a>
-        <a class="btn primary" href="#contact">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M4 7.5 12 12l8-4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M5.5 6h13A1.5 1.5 0 0 1 20 7.5v9A1.5 1.5 0 0 1 18.5 18h-13A1.5 1.5 0 0 1 4 16.5v-9A1.5 1.5 0 0 1 5.5 6Z" stroke="currentColor" stroke-width="1.7"/></svg>
+  </div>
+  <div class="hero-content">
+    <div class="wrap">
+      <div class="hero-eyebrow reveal">
+        <span class="dot"></span>
+        Davis County, UT &nbsp;•&nbsp; Organic Options &nbsp;•&nbsp; Pet &amp; Kid Friendly
+      </div>
+      <h1 class="reveal reveal-delay-1">A Lawn That <em>Earns</em> the Word Luxury.</h1>
+      <p class="hero-sub reveal reveal-delay-2">
+        Luxury Turf Service specializes in <strong style="color:var(--mint)">top dressing</strong> with premium sand or sand/organic blends — plus aeration, overseeding, and long-term soil health. The result is a smoother, denser, better-draining lawn that holds its look all season.
+      </p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <a class="btn gold" href="#contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7.5 12 12l8-4.5" stroke-linecap="round"/><rect x="4" y="6" width="16" height="12" rx="1.5"/></svg>
           Request a Quote
         </a>
+        <a class="btn" href="tel:+13854248588">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6.5 3.5h3l1.2 4-2 1.2c1.3 2.6 3.4 4.7 6 6l1.2-2 4 1.2v3c0 1.1-.9 2-2 2C10.7 21 3 13.3 3 5.5c0-1.1.9-2 2-2Z" stroke-linejoin="round"/></svg>
+          385-424-8588
+        </a>
+      </div>
+      <div class="hero-trust reveal">
+        <span class="trust-pill">10+ years green-industry experience</span>
+        <span class="trust-pill">Luxury finish • Soil-first approach</span>
+        <span class="trust-pill">Straightforward quotes • No games</span>
       </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main id="top">
-    <div class="orb one" aria-hidden="true"></div>
-    <div class="orb two" aria-hidden="true"></div>
+<div class="divider"></div>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="reveal">
-          <div class="kicker">
-            <span class="dot" aria-hidden="true"></span>
-            Davis County & surrounding areas • Organic options • Family-safe focus
-          </div>
-
-          <h1>Luxury Top Dressing.<br/>Smoother lawns. Healthier soil.</h1>
-          <p class="sub">
-            Luxury Turf Service specializes in <strong>premium top dressing</strong> using quality sand or sand/organic blends,
-            paired with aeration and overseeding when it makes sense. The result is a lawn that looks “finished” — smoother underfoot,
-            thicker in the canopy, and more water-efficient over time.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn primary" href="#contact">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M7 11l5 5 5-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 20h14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-              Get a Quote
-            </a>
-            <a class="btn" href="sms:+13854248588" aria-label="Text Luxury Turf Service">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7A2.5 2.5 0 0 1 17.5 16H9l-4 4v-4H6.5A2.5 2.5 0 0 1 4 13.5v-7Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-              Text
-            </a>
-            <a class="btn" href="tel:+13854248588" aria-label="Call Us at 385-424-8588">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M6.5 3.5h3l1.2 4-2 1.2c1.3 2.6 3.4 4.7 6 6l1.2-2 4 1.2v3c0 1.1-.9 2-2 2C10.7 21 3 13.3 3 5.5c0-1.1.9-2 2-2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-              Call
-            </a>
-          </div>
-
-          <div class="trust">
-            <span class="pill">10+ years green-industry experience</span>
-            <span class="pill">Luxury finish • Soil-first approach</span>
-            <span class="pill">Quote based on your property</span>
-          </div>
-
-          <!-- Quick image strip -->
-          <div class="strip reveal" aria-label="Luxury lawn imagery">
-            <div class="shot">
-              <div class="bg" style="background-image:url('https://source.unsplash.com/6A6RolEwrvc/900x700');"></div>
-              <div class="cap"><span>Premium Finish</span><span>Leveling</span></div>
-            </div>
-            <div class="shot">
-              <div class="bg" style="background-image:url('https://source.unsplash.com/aF__KNQWMIQ/900x700');"></div>
-              <div class="cap"><span>Soil-First</span><span>Structure</span></div>
-            </div>
-            <div class="shot">
-              <div class="bg" style="background-image:url('https://source.unsplash.com/nkOEmdZ9O7s/900x700');"></div>
-              <div class="cap"><span>Thicker Turf</span><span>Density</span></div>
-            </div>
-            <div class="shot">
-              <div class="bg" style="background-image:url('https://source.unsplash.com/oFsCcApKJkU/900x700');"></div>
-              <div class="cap"><span>Family Safe</span><span>Options</span></div>
-            </div>
-          </div>
+<!-- ── SERVICES ───────────────────────────────────────────── -->
+<section id="services" class="services-section">
+  <div class="wrap">
+    <div class="services-header reveal">
+      <div class="section-kicker">What We Do</div>
+      <h2 class="h2">Built Around<br>Top Dressing Done Right.</h2>
+      <p class="lead">Most lawn companies treat top dressing as an afterthought. We've made it the centerpiece — and pair it with the proven practices that make it last.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <div class="service-card-header">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M4 16c3-1 6-1 9 0s6 1 7 0v3c-1 1-4 1-7 0s-6-1-9 0v-3Z" stroke-linejoin="round"/><path d="M7 12c1.2-2.5 3-4 5-5 2 1 3.8 2.5 5 5" stroke-linecap="round"/></svg></div>
+          <span class="service-tag">Signature</span>
         </div>
+        <div class="service-title">Top Dressing</div>
+        <p class="service-desc">A thin, precision layer of premium sand or sand/organic blend worked into the canopy. Levels low spots, improves drainage, sets up the turf for thicker and more resilient growth over time.</p>
+        <div class="service-pills"><span class="s-pill">Better drainage</span><span class="s-pill">Smoother surface</span><span class="s-pill">Density boost</span></div>
+      </article>
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-card-header">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><circle cx="12" cy="12" r="7"/><path d="M12 8v4l2 2" stroke-linecap="round"/><path d="M12 3v2M21 12h-2M12 21v-2M3 12h2" stroke-linecap="round"/></svg></div>
+          <span class="service-tag">Turf Rehab</span>
+        </div>
+        <div class="service-title">Core Aeration</div>
+        <p class="service-desc">Relieves compaction and opens the lawn up for air, water, and nutrients. Creates the ideal window for top dressing and overseeding to take hold and deliver real results.</p>
+        <div class="service-pills"><span class="s-pill">Relieves compaction</span><span class="s-pill">Healthier roots</span><span class="s-pill">Less runoff</span></div>
+      </article>
+      <article class="service-card reveal">
+        <div class="service-card-header">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M12 3c4.5 3.2 7 7 7 10.7A7 7 0 1 1 5 13.7C5 10 7.5 6.2 12 3Z"/><path d="M8 15c1-2 3-3 4-3s3 1 4 3" stroke-linecap="round"/></svg></div>
+          <span class="service-tag">Density Builder</span>
+        </div>
+        <div class="service-title">Overseeding</div>
+        <p class="service-desc">New seed with proper soil contact equals a noticeably thicker turf — the kind that shades out weeds naturally and holds moisture better through Utah's dry summers.</p>
+        <div class="service-pills"><span class="s-pill">Thicker lawn</span><span class="s-pill">Natural weed suppression</span><span class="s-pill">Better color</span></div>
+      </article>
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-card-header">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M4 15c2-1 4-1 6 0s4 1 6 0 4-1 4 0v4H4v-4Z" stroke-linejoin="round"/><path d="M7 12c.7-2.5 2.5-4.2 5-5 2.5.8 4.3 2.5 5 5" stroke-linecap="round"/></svg></div>
+          <span class="service-tag">Soil-First</span>
+        </div>
+        <div class="service-title">Soil Building &amp; Organic Options</div>
+        <p class="service-desc">Organic blends that support microbial life and improve structure from the ground up. A long-game investment — and the safest choice for homes with kids and pets who live on that lawn.</p>
+        <div class="service-pills"><span class="s-pill">Organic options</span><span class="s-pill">Pet + kid-friendly focus</span><span class="s-pill">Long-term health</span></div>
+      </article>
+    </div>
+  </div>
+</section>
 
-        <div class="hero-card reveal" aria-label="Lush lawn image and quick highlights">
-          <div class="hero-media" aria-hidden="true"></div>
-          <div class="hero-overlay" aria-hidden="true"></div>
+<!-- ── PHOTO BAND ─────────────────────────────────────────── -->
+<div class="photo-band reveal">
+  <div class="photo-band-img"></div>
+  <div class="photo-band-content">
+    <div class="wrap">
+      <div class="pb-inner">
+        <div class="pb-quote">"Nice lawn" turns into <span>luxury lawn</span> when the soil beneath it is built right — not just the blades you see."</div>
+        <a class="btn primary" href="#contact">Get Your Property Assessed</a>
+      </div>
+    </div>
+  </div>
+</div>
 
-          <div class="hero-float">
-            <div class="statbar">
-              <div class="stat">
-                <div class="label">Core focus</div>
-                <div class="value">Top Dressing • Leveling • Soil Health</div>
-              </div>
-              <div class="stat">
-                <div class="label">Materials</div>
-                <div class="value">Premium sand or sand/organic blend</div>
-              </div>
-            </div>
-            <div class="stat">
-              <div class="label">Outcome</div>
-              <div class="value">Smoother surface • Better drainage • Thicker canopy • Reduced weeds</div>
-            </div>
-          </div>
+<!-- ── WHY TOP DRESSING ───────────────────────────────────── -->
+<section id="why" class="why-section">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-kicker">The Science of It</div>
+      <h2 class="h2">Why Top Dressing<br>Works So Well.</h2>
+      <p class="lead">It's one of the most impactful — and most skipped — services in residential turf care. Here's exactly what it does.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-visual reveal">
+        <div class="why-img"></div>
+        <div class="why-img-overlay"></div>
+        <div class="why-cards-bottom">
+          <div class="mini-stat"><div class="ms-label">Materials</div><div class="ms-val">Premium sand or sand/organic blend</div></div>
+          <div class="mini-stat"><div class="ms-label">Timing</div><div class="ms-val">Best paired with aeration + overseeding</div></div>
         </div>
       </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services" class="section">
-      <div class="wrap">
-        <div class="reveal">
-          <h2 class="h2">Services</h2>
-          <p class="lead">
-            We’re built around the service most lawn companies skip: <strong>top dressing done right</strong>.
-            Pair it with the right supporting work, and you get the luxury result — not just “good enough.”
-          </p>
-        </div>
-
-        <div class="grid services">
-          <article class="card pad reveal">
-            <div class="topline">
-              <div class="badge">Signature Service</div>
-              <div class="iconchip" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M4 16c3-1 6-1 9 0s6 1 7 0v3c-1 1-4 1-7 0s-6-1-9 0v-3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M7 12c1.2-2.5 3-4 5-5 2 1 3.8 2.5 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-              </div>
-            </div>
-            <div class="service-title">Top Dressing (Premium Sand or Sand/Organic Blend)</div>
-            <p class="service-desc">
-              A thin, even layer worked into the canopy to <strong>level minor low spots</strong>, improve soil structure,
-              and set your lawn up for thicker growth. Best paired with aeration and (when needed) overseeding.
-            </p>
-            <div class="service-note">
-              <span class="pill">Better drainage</span>
-              <span class="pill">Smoother lawn</span>
-              <span class="pill">Boosts density</span>
-            </div>
-          </article>
-
-          <article class="card pad reveal">
-            <div class="topline">
-              <div class="badge">Turf Rehab</div>
-              <div class="iconchip" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M12 20c-4-2.8-7-6.3-7-10a7 7 0 0 1 14 0c0 3.7-3 7.2-7 10Z" stroke="currentColor" stroke-width="1.7"/><path d="M12 9v5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M9.5 12.2 12 14.6l2.5-2.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </div>
-            </div>
-            <div class="service-title">Core Aeration</div>
-            <p class="service-desc">
-              Relieves compaction and opens pathways for air, water, and nutrients. Creates the perfect window for
-              top dressing to settle in where it matters.
-            </p>
-            <div class="service-note">
-              <span class="pill">Less runoff</span>
-              <span class="pill">Healthier roots</span>
-              <span class="pill">Improved infiltration</span>
-            </div>
-          </article>
-
-          <article class="card pad reveal">
-            <div class="topline">
-              <div class="badge">Density Builder</div>
-              <div class="iconchip" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c4.5 3.2 7 7 7 10.7A7 7 0 1 1 5 13.7C5 10 7.5 6.2 12 3Z" stroke="currentColor" stroke-width="1.7"/><path d="M8 15c1-2 3-3 4-3s3 1 4 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-              </div>
-            </div>
-            <div class="service-title">Overseeding</div>
-            <p class="service-desc">
-              New seed + proper soil contact = thicker turf. A dense lawn shades soil, helping reduce weeds
-              and holding moisture better in summer.
-            </p>
-            <div class="service-note">
-              <span class="pill">Thicker lawn</span>
-              <span class="pill">Fewer weeds</span>
-              <span class="pill">Better color</span>
-            </div>
-          </article>
-
-          <article class="card pad reveal">
-            <div class="topline">
-              <div class="badge">Soil-First</div>
-              <div class="iconchip" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M4 15c2-1 4-1 6 0s4 1 6 0 4-1 4 0v4H4v-4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M7 12c.7-2.5 2.5-4.2 5-5 2.5.8 4.3 2.5 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-              </div>
-            </div>
-            <div class="service-title">Soil Building (Organic Options)</div>
-            <p class="service-desc">
-              Organic components can support soil biology and improve structure over time — a great fit for homes that want a lawn that’s
-              <strong>safer for pets and kids</strong> while still aiming for a high-end finish.
-            </p>
-            <div class="service-note">
-              <span class="pill">Organic options</span>
-              <span class="pill">Family-friendly focus</span>
-              <span class="pill">Long-term health</span>
-            </div>
-          </article>
+      <div class="why-benefits reveal reveal-delay-1">
+        <div class="benefit-row"><div class="benefit-num">1</div><div><div class="benefit-title">Smoother, More Refined Surface</div><p class="benefit-desc">Fills low spots and minor unevenness — your lawn looks and feels more finished, like a course fairway rather than a typical yard.</p></div></div>
+        <div class="benefit-row"><div class="benefit-num">2</div><div><div class="benefit-title">Better Water Efficiency &amp; Drainage</div><p class="benefit-desc">Improves infiltration so water reaches the root zone instead of pooling or running off — especially valuable in Utah's climate.</p></div></div>
+        <div class="benefit-row"><div class="benefit-num">3</div><div><div class="benefit-title">Thicker, More Resilient Turf</div><p class="benefit-desc">Supports stronger root development and better growing conditions — particularly when paired with aeration and overseeding.</p></div></div>
+        <div class="benefit-row"><div class="benefit-num">4</div><div><div class="benefit-title">Natural Weed Suppression</div><p class="benefit-desc">A dense canopy shades the soil and crowds out weed seeds — fewer chemicals, better results, safer for your family.</p></div></div>
+        <div class="benefit-row"><div class="benefit-num">5</div><div><div class="benefit-title">Organic Options for Families</div><p class="benefit-desc">We can work organic components into the blend — feeding soil biology and building long-term turf health in a way that's safe for kids and pets.</p></div></div>
+        <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:10px;">
+          <a class="btn primary" href="#contact">Request a Quote</a>
+          <a class="btn" href="tel:+13854248588">385-424-8588</a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- WHY TOP DRESSING -->
-    <section id="topdressing" class="section">
-      <div class="wrap">
-        <div class="reveal">
-          <h2 class="h2">Why top dressing works</h2>
-          <p class="lead">
-            Top dressing is where “nice lawn” turns into “luxury lawn.” Done correctly, it improves the surface, the soil,
-            and the turf — all at once.
-          </p>
-        </div>
+<!-- ── PROCESS ────────────────────────────────────────────── -->
+<section id="process" class="process-section">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-kicker">How It Works</div>
+      <h2 class="h2">Simple. Clean.<br>No Surprises.</h2>
+      <p class="lead">From first contact to final walkthrough, here's what to expect when you work with us.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-step reveal"><div class="p-num">1</div><div><div class="p-title">Quick Quote Request</div><p class="p-desc">Send your details and lot size (optional). We'll review your goals and recommend the best combination — top dressing, aeration, overseeding — for your specific property.</p></div></div>
+      <div class="process-step reveal reveal-delay-1"><div class="p-num">2</div><div><div class="p-title">Prep &amp; Planning</div><p class="p-desc">We align on timing, weather windows, and irrigation. Then we choose the right blend — premium sand or a sand/organic mix — based on your lawn's needs and your household goals.</p></div></div>
+      <div class="process-step reveal"><div class="p-num">3</div><div><div class="p-title">Service Day</div><p class="p-desc">Clean edges, careful and even application, a luxury finish. We take pride in the outcome — not just checking a box. Your neighbors will notice.</p></div></div>
+      <div class="process-step reveal reveal-delay-1"><div class="p-num">4</div><div><div class="p-title">Aftercare &amp; Follow-Up</div><p class="p-desc">You'll get simple, clear guidance on watering and mowing cadence so the lawn responds quickly and comes in thick. We're available for questions after the visit.</p></div></div>
+    </div>
+  </div>
+</section>
 
-        <div class="split">
-          <div class="card pad reveal">
-            <div class="badge">Key Benefits</div>
-            <div class="hr"></div>
-            <div class="grid" style="gap:12px;">
-              <div class="step">
-                <div class="num">1</div>
-                <div>
-                  <h4>Smoother lawn</h4>
-                  <p>Levels minor dips and uneven areas so your yard feels cleaner, safer, and more “finished.”</p>
-                </div>
-              </div>
-              <div class="step">
-                <div class="num">2</div>
-                <div>
-                  <h4>Better water efficiency + drainage</h4>
-                  <p>Improves infiltration so water gets into the root zone instead of running off or pooling.</p>
-                </div>
-              </div>
-              <div class="step">
-                <div class="num">3</div>
-                <div>
-                  <h4>Thicker turf health</h4>
-                  <p>Supports stronger roots and better growth conditions — especially when paired with aeration and overseeding.</p>
-                </div>
-              </div>
-              <div class="step">
-                <div class="num">4</div>
-                <div>
-                  <h4>Reduced weeds (naturally)</h4>
-                  <p>A dense, healthy canopy crowds out weeds and shades soil so weed seeds struggle to establish.</p>
-                </div>
-              </div>
-              <div class="step">
-                <div class="num">5</div>
-                <div>
-                  <h4>Organic options for families</h4>
-                  <p>We can use organic components focused on soil biology — ideal for homes with kids and pets.</p>
-                </div>
-              </div>
-            </div>
+<!-- ── PHOTO GRID ─────────────────────────────────────────── -->
+<section class="photo-grid-section">
+  <div class="wrap">
+    <div class="photo-grid">
+      <div class="pg-item reveal"><div class="pg-img"></div><div class="pg-cap">Premium top dressing — a luxury result, built from the soil up</div></div>
+      <div class="pg-item reveal reveal-delay-1"><div class="pg-img"></div><div class="pg-cap">Aeration opens the canopy for deeper penetration</div></div>
+      <div class="pg-item reveal reveal-delay-2"><div class="pg-img"></div><div class="pg-cap">Dense, healthy turf — the goal of every application</div></div>
+      <div class="pg-item reveal reveal-delay-3"><div class="pg-img"></div><div class="pg-cap">Organic soil building — safe for kids, pets, and pollinators</div></div>
+    </div>
+  </div>
+</section>
 
-            <div class="hr"></div>
-            <div style="display:flex; flex-wrap:wrap; gap:10px;">
-              <a class="btn primary" href="#contact">Request a Quote</a>
-              <a class="btn" href="tel:+13854248588">Call Us</a>
-            </div>
+<!-- ── FAQ ────────────────────────────────────────────────── -->
+<section id="faq" class="faq-section">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-kicker">Good Questions</div>
+      <h2 class="h2">FAQ</h2>
+      <p class="lead">The things homeowners want to know before they commit — answered plainly.</p>
+    </div>
+    <div class="faq-grid reveal">
+      <details><summary>What exactly is top dressing? <span class="sum-icon">+</span></summary><p>Top dressing is applying a thin, even layer of premium material — sand or a sand/organic blend — across the lawn surface and working it down into the canopy. It levels minor unevenness, improves how water moves through the soil, and creates a healthier environment for turf roots and density over time.</p></details>
+      <details><summary>Will it help with pooling water or dry spots? <span class="sum-icon">+</span></summary><p>In many cases, yes. A sand-based top dressing improves infiltration and reduces surface pooling caused by minor compaction or grade issues. We'll tell you honestly upfront if a problem is beyond what top dressing can solve — so you're never paying for the wrong fix.</p></details>
+      <details><summary>When is the best time for aeration + overseeding in Utah? <span class="sum-icon">+</span></summary><p>Timing depends on your grass type and the weather cycle, but Utah's best windows are typically early fall for cool-season grasses. Aeration + top dressing + overseeding together is one of the fastest paths to a noticeably thicker lawn. We'll recommend the right window during your quote.</p></details>
+      <details><summary>Is it safe for my kids and pets? <span class="sum-icon">+</span></summary><p>We offer organic options and a soil-first approach that prioritizes long-term health over shortcuts. If you have specific concerns — pets with sensitivities, kids who play on the lawn — mention it in the quote request and we'll tailor the blend accordingly.</p></details>
+      <details><summary>Do you post pricing online? <span class="sum-icon">+</span></summary><p>Not yet — because properties vary significantly in lot size, slope, access, and what services make sense. We keep the quote process simple and fast: fill out the form, we come back to you with a clean, specific number. No fluff, no upsells.</p></details>
+      <details><summary>What areas do you serve? <span class="sum-icon">+</span></summary><p>We're based in Davis County and serve surrounding communities including Farmington, Kaysville, Bountiful, Layton, Centerville, North Salt Lake, Syracuse, Fruit Heights, Clinton, West Point, and Woods Cross. If you're unsure, just reach out — we'll let you know quickly.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICE AREA ───────────────────────────────────────── -->
+<section class="area-section" aria-labelledby="area-heading">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-kicker">Where We Work</div>
+      <h2 class="h2" id="area-heading">Serving Davis County<br>&amp; Northern Utah.</h2>
+      <p class="lead">We provide premium top dressing, aeration, and lawn care services across Davis County and surrounding communities. Not sure if you're in our area? Just ask — we'll let you know fast.</p>
+    </div>
+    <div class="area-grid reveal">
+      <div class="area-pill"><span class="area-check">✓</span>Farmington, UT</div>
+      <div class="area-pill"><span class="area-check">✓</span>Kaysville, UT</div>
+      <div class="area-pill"><span class="area-check">✓</span>Bountiful, UT</div>
+      <div class="area-pill"><span class="area-check">✓</span>Layton, UT</div>
+      <div class="area-pill"><span class="area-check">✓</span>Centerville, UT</div>
+      <div class="area-pill"><span class="area-check">✓</span>North Salt Lake, UT</div>
+      <div class="area-pill"><span class="area-check">✓</span>Syracuse, UT</div>
+      <div class="area-pill"><span class="area-check">✓</span>Fruit Heights, UT</div>
+      <div class="area-pill"><span class="area-check">✓</span>Clinton, UT</div>
+      <div class="area-pill"><span class="area-check">✓</span>West Point, UT</div>
+      <div class="area-pill"><span class="area-check">✓</span>Woods Cross, UT</div>
+      <div class="area-pill"><span class="area-check">✓</span>Surrounding Areas</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ─────────────────────────────────────────────── -->
+<section id="contact" class="contact-section">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-kicker">Get Started</div>
+      <h2 class="h2">Request a Quote.</h2>
+      <p class="lead">Fill out the form below and it goes straight to our inbox — no email app, no friction. We'll reply with a specific quote, not a sales pitch.</p>
+    </div>
+    <div class="contact-grid">
+
+      <!-- Contact info + socials -->
+      <div class="contact-info reveal">
+        <div class="ci-photo"></div>
+        <div class="ci-body">
+          <div class="ci-tag">Luxury Turf Service — Davis County, UT</div>
+          <div class="ci-heading">Let's talk about your property.</div>
+          <p class="ci-desc">Whether you want to level a bumpy yard, build a thicker lawn, or just want to know what's actually possible — we're a quick call or email away.</p>
+          <div class="ci-actions">
+            <a class="btn primary" href="tel:+13854248588">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6.5 3.5h3l1.2 4-2 1.2c1.3 2.6 3.4 4.7 6 6l1.2-2 4 1.2v3c0 1.1-.9 2-2 2C10.7 21 3 13.3 3 5.5c0-1.1.9-2 2-2Z" stroke-linejoin="round"/></svg>
+              385-424-8588
+            </a>
+            <a class="btn" href="mailto:luxturfservice@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7.5 12 12l8-4.5" stroke-linecap="round"/><rect x="4" y="6" width="16" height="12" rx="1.5"/></svg>
+              luxturfservice@gmail.com
+            </a>
           </div>
-
-          <div class="diagram reveal" aria-label="Top dressing diagram">
-            <div class="soil-bg" aria-hidden="true"></div>
-            <div class="titlebar">
-              <div>
-                <div style="font-weight:950; letter-spacing:.1px;">How top dressing upgrades the lawn</div>
-                <div class="small">Thin layers • Worked into canopy • Built for long-term results</div>
-              </div>
-              <div class="badge">Soil-first</div>
-            </div>
-
-            <div class="layers">
-              <div class="layer">
-                <div class="mini" aria-hidden="true">🌿</div>
-                <div>
-                  <h4>Canopy leveling</h4>
-                  <p>Light, even top dressing fills minor low spots and smooths the surface without smothering turf.</p>
-                </div>
-              </div>
-              <div class="layer">
-                <div class="mini" aria-hidden="true">💧</div>
-                <div>
-                  <h4>Infiltration & drainage</h4>
-                  <p>Sand-based materials improve water movement into the root zone and can reduce pooling.</p>
-                </div>
-              </div>
-              <div class="layer">
-                <div class="mini" aria-hidden="true">🌱</div>
-                <div>
-                  <h4>Seed-to-soil contact</h4>
-                  <p>When overseeding, top dressing helps seed nestle in — improving germination and density.</p>
-                </div>
-              </div>
-              <div class="layer">
-                <div class="mini" aria-hidden="true">🧬</div>
-                <div>
-                  <h4>Soil biology (organic option)</h4>
-                  <p>Organic blends can support microbes and improve structure — building healthier turf over time.</p>
-                </div>
-              </div>
-            </div>
+          <div class="ci-hr"></div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-dim);margin-bottom:12px;">Follow Us</div>
+          <div class="social-bar">
+            <a class="social-btn fb" href="https://www.facebook.com/profile.php?id=61588613744813" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              Facebook
+            </a>
+            <a class="social-btn ig" href="https://www.instagram.com/luxuryturfservice/" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" stroke-linejoin="round"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              @luxuryturfservice
+            </a>
           </div>
+          <div class="ci-hr"></div>
+          <p class="ci-detail"><strong>We'll ask for:</strong> name, phone, city/address, services you're interested in, and lot size if you know it (totally optional). We'll come back with a clear, specific quote.</p>
         </div>
+      </div>
 
-        <div style="height:18px;"></div>
+      <!-- Formspree form -->
+      <div class="contact-form-card reveal reveal-delay-1">
+        <div class="form-title">Request a Free Quote</div>
 
-        <!-- BEFORE/AFTER SLIDER -->
-        <div class="reveal">
-          <h3 style="margin:0 0 10px; font-size:18px; font-weight:950; letter-spacing:.1px;">Before / After (drag the handle)</h3>
-          <p class="lead" style="margin-bottom:16px;">
-            Placeholder images for now. When you have real jobs photographed, we’ll swap them in and it’ll hit way harder. 😄
-          </p>
-        </div>
-
-        <div class="slider reveal" id="baSlider" aria-label="Before and after slider">
-          <div class="img after" aria-hidden="true"></div>
-          <div class="before-wrap" id="beforeWrap" aria-hidden="true">
-            <div class="img before"></div>
-          </div>
-          <div class="handle" id="sliderHandle" aria-hidden="true"></div>
-          <div class="knob" id="sliderKnob" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0" aria-label="Before and after slider control">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M10 7 6 12l4 5" stroke="rgba(255,255,255,.9)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M14 7 18 12l-4 5" stroke="rgba(255,255,255,.9)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Success message (hidden until submission) -->
+        <div class="form-success" id="formSuccess">
+          <div class="fs-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="2.2" width="26" height="26">
+              <path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <div class="labels" aria-hidden="true">
-            <span class="tag">BEFORE</span>
-            <span class="tag">AFTER</span>
-          </div>
-          <div class="caption">
-            <strong style="color:rgba(255,255,255,.92);">What improves:</strong>
-            surface smoothness, root-zone conditions, water movement, and canopy density that helps reduce weeds naturally.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section id="process" class="section">
-      <div class="wrap">
-        <div class="reveal">
-          <h2 class="h2">Our process (simple, clean, professional)</h2>
-          <p class="lead">
-            Most clients just want to know: “Are you organized?” Yes. This is how we keep it smooth from quote to finish.
-          </p>
+          <h3>Quote Request Sent!</h3>
+          <p>We'll review your details and get back to you with a specific quote — usually within one business day.</p>
+          <p style="margin-top:10px;">Questions in the meantime? Call us at <a href="tel:+13854248588">385-424-8588</a>.</p>
         </div>
 
-        <div class="grid steps">
-          <div class="card pad reveal">
-            <div class="step">
-              <div class="num">1</div>
-              <div>
-                <h4>Quick quote request</h4>
-                <p>Send your info + goals. If you know rough lawn square footage, great — if not, we’ll still guide you.</p>
-              </div>
+        <form class="form" id="quoteForm" action="https://formspree.io/f/xpqoqanj" method="POST">
+          <!-- Formspree subject line override -->
+          <input type="hidden" name="_subject" value="New Quote Request — Luxury Turf Service"/>
+          <!-- Honeypot anti-spam -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off"/>
+
+          <div class="row2">
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" placeholder="Your name" required/>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input id="f-phone" name="phone" type="tel" placeholder="(___) ___-____" required/>
             </div>
           </div>
-          <div class="card pad reveal">
-            <div class="step">
-              <div class="num">2</div>
-              <div>
-                <h4>Plan the right combo</h4>
-                <p>We recommend top dressing alone, or paired with aeration/overseed depending on lawn condition and timing.</p>
-              </div>
+          <div class="row2">
+            <div class="field">
+              <label for="f-city">City / Area</label>
+              <input id="f-city" name="city" type="text" placeholder="e.g., Farmington, Kaysville, Bountiful"/>
+            </div>
+            <div class="field">
+              <label for="f-sqft">Lot sq. ft. (optional)</label>
+              <input id="f-sqft" name="sqft" type="text" placeholder="e.g., 4,000 sq ft"/>
             </div>
           </div>
-          <div class="card pad reveal">
-            <div class="step">
-              <div class="num">3</div>
-              <div>
-                <h4>Service day (luxury finish)</h4>
-                <p>Even coverage, clean edges, and a professional look. We’re chasing “expensive,” not “acceptable.”</p>
-              </div>
+          <div class="field">
+            <label>Services You're Interested In</label>
+            <div style="display:grid;gap:10px;margin-top:4px;">
+              <label class="check-label"><input type="checkbox" name="service[]" value="Top Dressing (premium sand or sand/organic blend)"/> Top Dressing (premium sand or sand/organic blend)</label>
+              <label class="check-label"><input type="checkbox" name="service[]" value="Core Aeration"/> Core Aeration</label>
+              <label class="check-label"><input type="checkbox" name="service[]" value="Overseeding"/> Overseeding</label>
+              <label class="check-label"><input type="checkbox" name="service[]" value="Organic Soil Building"/> Organic Soil Building</label>
             </div>
           </div>
-          <div class="card pad reveal">
-            <div class="step">
-              <div class="num">4</div>
-              <div>
-                <h4>Aftercare guidance</h4>
-                <p>You get simple watering + mowing direction so the lawn responds quickly and comes in thick.</p>
-              </div>
-            </div>
+          <div class="field">
+            <label for="f-notes">Notes (optional)</label>
+            <textarea id="f-notes" name="notes" placeholder="Pooling water, uneven areas, pets/kids focus, timing preferences, anything else…"></textarea>
           </div>
+          <button class="btn primary" type="submit" id="submitBtn" style="width:100%;justify-content:center;padding:15px 20px;font-size:15px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 2 11 13" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 2 15 22l-4-9-9-4 20-7Z" stroke-linejoin="round"/></svg>
+            <span id="submitLabel">Send Quote Request</span>
+          </button>
+          <div class="form-error" id="formError">
+            Something went wrong — please try again, or call us at <a href="tel:+13854248588">385-424-8588</a>.
+          </div>
+          <p class="hint" style="text-align:center;margin-top:4px;">Your info goes straight to our inbox. No spam, no sales calls.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA BANNER ─────────────────────────────────────────── -->
+<section class="cta-section">
+  <div class="wrap">
+    <div class="cta-card reveal">
+      <div class="cta-bg"></div>
+      <div class="cta-accent"></div>
+      <div class="cta-content">
+        <div class="cta-sub">Ready When You Are</div>
+        <div class="cta-heading">Make your lawn look and feel luxury.</div>
+        <div class="cta-actions">
+          <a class="btn gold" href="#contact">Request a Quote</a>
+          <a class="btn" href="tel:+13854248588">Call 385-424-8588</a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- TESTIMONIALS (placeholders for now) -->
-    <section class="section" aria-label="Testimonials">
-      <div class="wrap">
-        <div class="reveal">
-          <h2 class="h2">Homeowner-level results (without the hassle)</h2>
-          <p class="lead">Until you have real reviews, these are placeholders — replace later with actual client quotes.</p>
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">Luxury Turf Service</div>
+          <div class="footer-tagline">Premium top dressing &amp; soil health — Davis County, UT.<br>Serving Farmington, Kaysville, Bountiful, Layton &amp; surrounding areas.</div>
         </div>
-
-        <div class="grid testimonials">
-          <div class="card pad reveal">
-            <div class="badge">Premium finish</div>
-            <p class="quote">“The yard looks noticeably smoother and more even. It’s one of those upgrades you feel when you walk on it.”</p>
-            <div class="who"><span>— Placeholder Client</span><span>Davis County</span></div>
-          </div>
-          <div class="card pad reveal">
-            <div class="badge">Cleaner watering</div>
-            <p class="quote">“Less pooling, better soak-in. I’m not wasting water the same way I used to.”</p>
-            <div class="who"><span>— Placeholder Client</span><span>Kaysville / Farmington</span></div>
-          </div>
-          <div class="card pad reveal">
-            <div class="badge">Straightforward</div>
-            <p class="quote">“Clear quote, good communication, and it looked professional when they were done.”</p>
-            <div class="who"><span>— Placeholder Client</span><span>Bountiful</span></div>
-          </div>
+        <div class="social-bar">
+          <a class="social-btn fb" href="https://www.facebook.com/profile.php?id=61588613744813" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Facebook
+          </a>
+          <a class="social-btn ig" href="https://www.instagram.com/luxuryturfservice/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" stroke-linejoin="round"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            @luxuryturfservice
+          </a>
         </div>
       </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="section">
-      <div class="wrap">
-        <div class="reveal">
-          <h2 class="h2">FAQ</h2>
-          <p class="lead">Quick answers to the questions homeowners ask before committing.</p>
-        </div>
-
-        <div class="faq reveal">
-          <details>
-            <summary>
-              What is top dressing, in plain English?
-              <span class="plus" aria-hidden="true">+</span>
-            </summary>
-            <p>
-              Top dressing is applying a thin layer of premium material (sand or sand/organic blend) across the lawn, then working it into the canopy.
-              It can help level minor unevenness, improve how water moves through the soil, and support thicker turf over time.
-            </p>
-          </details>
-
-          <details>
-            <summary>
-              Will it help with pooling water or dry spots?
-              <span class="plus" aria-hidden="true">+</span>
-            </summary>
-            <p>
-              Often, yes. A properly selected sand-based top dressing can improve infiltration and reduce pooling caused by minor surface issues.
-              For deeper drainage problems, we’ll tell you upfront what top dressing can and can’t solve.
-            </p>
-          </details>
-
-          <details>
-            <summary>
-              When should I do aeration + overseeding?
-              <span class="plus" aria-hidden="true">+</span>
-            </summary>
-            <p>
-              Usually during the best growth windows. Timing depends on your turf type and weather.
-              Aeration + top dressing + overseeding is one of the fastest paths to a noticeably thicker lawn.
-            </p>
-          </details>
-
-          <details>
-            <summary>
-              Is it safe for kids and pets?
-              <span class="plus" aria-hidden="true">+</span>
-            </summary>
-            <p>
-              We offer organic options and a soil-first approach. If you have specific concerns, include it in the quote request
-              and we’ll recommend the safest approach for your household.
-            </p>
-          </details>
-
-          <details>
-            <summary>
-              Do you publish pricing online?
-              <span class="plus" aria-hidden="true">+</span>
-            </summary>
-            <p>
-              Not yet — properties vary (lawn size, access, condition, and the service mix). We keep it simple:
-              request a quote and we’ll give you a clean, straightforward number.
-            </p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="wrap">
-        <div class="reveal">
-          <h2 class="h2">Request a quote</h2>
-          <p class="lead">
-            Fill this out and it will open a pre-written email to <strong>luxturfservice@gmail.com</strong> with your details.
-            Fast, simple, and perfect for GitHub Pages.
-          </p>
-        </div>
-
-        <div class="contact">
-          <div class="card pad reveal">
-            <div class="badge">Contact</div>
-            <div class="hr"></div>
-
-            <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
-              <a class="btn primary" href="tel:+13854248588">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M6.5 3.5h3l1.2 4-2 1.2c1.3 2.6 3.4 4.7 6 6l1.2-2 4 1.2v3c0 1.1-.9 2-2 2C10.7 21 3 13.3 3 5.5c0-1.1.9-2 2-2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-                Call Us: 385-424-8588
-              </a>
-              <a class="btn" href="sms:+13854248588">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7A2.5 2.5 0 0 1 17.5 16H9l-4 4v-4H6.5A2.5 2.5 0 0 1 4 13.5v-7Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-                Text Us
-              </a>
-              <a class="btn" href="mailto:luxturfservice@gmail.com?subject=Luxury%20Turf%20Service%20-%20Quote%20Request">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M4 7.5 12 12l8-4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M5.5 6h13A1.5 1.5 0 0 1 20 7.5v9A1.5 1.5 0 0 1 18.5 18h-13A1.5 1.5 0 0 1 4 16.5v-9A1.5 1.5 0 0 1 5.5 6Z" stroke="currentColor" stroke-width="1.7"/></svg>
-                Email
-              </a>
-            </div>
-
-            <p class="hint">
-              Service area: Davis County + surrounding areas. We’ll respond with next steps and a clean quote.
-            </p>
-
-            <div class="hr"></div>
-            <div class="badge">Fast quote checklist</div>
-            <p class="hint" style="margin-top:10px;">
-              Name, phone, city, services you want, and a rough lawn square footage if you know it (optional).
-            </p>
-          </div>
-
-          <div class="card pad reveal">
-            <div class="badge">Quote Email Builder</div>
-            <div class="hr"></div>
-
-            <form class="form" id="quoteForm">
-              <div class="row">
-                <div class="field">
-                  <label for="name">Name</label>
-                  <input id="name" name="name" type="text" placeholder="Your name" required />
-                </div>
-                <div class="field">
-                  <label for="phone">Phone</label>
-                  <input id="phone" name="phone" type="tel" placeholder="(___) ___-____" required />
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="field">
-                  <label for="city">City / Area</label>
-                  <input id="city" name="city" type="text" placeholder="e.g., Farmington / Kaysville / Bountiful" />
-                </div>
-                <div class="field">
-                  <label for="sqft">Lawn square footage (optional)</label>
-                  <input id="sqft" name="sqft" type="text" placeholder="e.g., 3,500 sq ft" />
-                </div>
-              </div>
-
-              <div class="field">
-                <label for="servicesSelect">Services you’re interested in</label>
-                <select id="servicesSelect" name="servicesSelect" multiple aria-label="Select services (multiple)">
-                  <option value="Top Dressing (Premium sand or sand/organic blend)">Top Dressing (Premium sand or sand/organic blend)</option>
-                  <option value="Core Aeration">Core Aeration</option>
-                  <option value="Overseeding">Overseeding</option>
-                  <option value="Soil Building (Organic options)">Soil Building (Organic options)</option>
-                </select>
-                <div class="hint">Tip: On desktop hold Ctrl (Windows) / Cmd (Mac) to select multiple.</div>
-              </div>
-
-              <div class="field">
-                <label for="details">Notes (optional)</label>
-                <textarea id="details" name="details" placeholder="Anything we should know? (pooling water, uneven areas, pets/kids focus, timing, etc.)"></textarea>
-              </div>
-
-              <button class="btn primary" type="submit">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M12 6l6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Create Email & Send
-              </button>
-
-              <button class="btn" type="button" id="copyBtn" aria-label="Copy quote message to clipboard">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M9 9h10v10H9V9Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
-                  <path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-                </svg>
-                Copy Message
-              </button>
-
-              <p class="hint" style="margin:0;">
-                Opens your email app with a pre-filled message. If mailto is blocked, use “Copy Message” and paste it into a text/email manually.
-              </p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section class="section" style="padding-top:40px;">
-      <div class="wrap">
-        <div class="card pad reveal" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:14px;">
-          <div>
-            <div class="badge">Ready when you are</div>
-            <div style="font-weight:950; font-size:18px; margin-top:10px;">Let’s make your lawn look expensive.</div>
-            <div class="hint">Top dressing + soil health is the fastest way to get a luxury finish that lasts.</div>
-          </div>
-          <div style="display:flex; gap:10px; flex-wrap:wrap;">
-            <a class="btn primary" href="#contact">Request a Quote</a>
-            <a class="btn" href="tel:+13854248588">Call Us</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="wrap footer-row">
-        <div>© <span id="year"></span> Luxury Turf Service • Davis County, UT</div>
-        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+      <div class="footer-bottom">
+        <div>© <span id="year"></span> Luxury Turf Service &nbsp;•&nbsp; Davis County, UT</div>
+        <div class="footer-links">
           <a href="mailto:luxturfservice@gmail.com">luxturfservice@gmail.com</a>
-          <span class="muted">•</span>
           <a href="tel:+13854248588">385-424-8588</a>
         </div>
       </div>
-    </footer>
-  </main>
-
-  <!-- Mobile sticky CTA -->
-  <div class="sticky-cta" aria-label="Quick actions">
-    <a class="btn primary" href="#contact">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M4 7.5 12 12l8-4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M5.5 6h13A1.5 1.5 0 0 1 20 7.5v9A1.5 1.5 0 0 1 18.5 18h-13A1.5 1.5 0 0 1 4 16.5v-9A1.5 1.5 0 0 1 5.5 6Z" stroke="currentColor" stroke-width="1.7"/></svg>
-      Quote
-    </a>
-    <a class="btn icon" href="tel:+13854248588" aria-label="Call">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M6.5 3.5h3l1.2 4-2 1.2c1.3 2.6 3.4 4.7 6 6l1.2-2 4 1.2v3c0 1.1-.9 2-2 2C10.7 21 3 13.3 3 5.5c0-1.1.9-2 2-2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-    </a>
-    <a class="btn icon" href="sms:+13854248588" aria-label="Text">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7A2.5 2.5 0 0 1 17.5 16H9l-4 4v-4H6.5A2.5 2.5 0 0 1 4 13.5v-7Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-    </a>
+    </div>
   </div>
+</footer>
+</main>
 
-  <script>
-    // ----------------------------
-    // Smooth reveal on scroll
-    // ----------------------------
-    const reveals = Array.from(document.querySelectorAll('.reveal'));
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('on');
-          io.unobserve(e.target);
-        }
+<script>
+// ── Year ──────────────────────────────────────────────────────
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// ── Hero parallax ────────────────────────────────────────────
+const heroBg = document.getElementById('heroBg');
+window.addEventListener('scroll', () => {
+  if(heroBg) heroBg.style.transform = `scale(1.03) translateY(${window.scrollY * 0.25}px)`;
+}, {passive:true});
+
+// ── Scroll reveal ────────────────────────────────────────────
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting){ e.target.classList.add('on'); revealObs.unobserve(e.target); }
+  });
+}, {threshold:0.10});
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+// ── Formspree AJAX submit ────────────────────────────────────
+(function(){
+  const form    = document.getElementById('quoteForm');
+  const success = document.getElementById('formSuccess');
+  const errBox  = document.getElementById('formError');
+  const btn     = document.getElementById('submitBtn');
+  const lbl     = document.getElementById('submitLabel');
+  if(!form) return;
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    errBox.classList.remove('show');
+    btn.disabled = true;
+    lbl.textContent = 'Sending…';
+
+    try {
+      const res = await fetch(form.action, {
+        method:'POST',
+        body: new FormData(form),
+        headers:{'Accept':'application/json'}
       });
-    }, { threshold: 0.12 });
-    reveals.forEach(el => io.observe(el));
-
-    // ----------------------------
-    // Footer year
-    // ----------------------------
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // ----------------------------
-    // Mobile drawer
-    // ----------------------------
-    (function(){
-      const openBtn = document.getElementById('drawerOpen');
-      const closeBtn = document.getElementById('drawerClose');
-      const drawer = document.getElementById('drawer');
-      const backdrop = document.getElementById('drawerBackdrop');
-      const closeLinks = Array.from(document.querySelectorAll('[data-close-drawer]'));
-
-      const open = () => {
-        drawer.classList.add('open');
-        backdrop.classList.add('open');
-        drawer.setAttribute('aria-hidden', 'false');
-        backdrop.setAttribute('aria-hidden', 'false');
-        // focus first link for accessibility
-        const firstLink = drawer.querySelector('a');
-        if (firstLink) firstLink.focus();
-      };
-
-      const close = () => {
-        drawer.classList.remove('open');
-        backdrop.classList.remove('open');
-        drawer.setAttribute('aria-hidden', 'true');
-        backdrop.setAttribute('aria-hidden', 'true');
-        openBtn && openBtn.focus();
-      };
-
-      openBtn && openBtn.addEventListener('click', open);
-      closeBtn && closeBtn.addEventListener('click', close);
-      backdrop && backdrop.addEventListener('click', close);
-
-      closeLinks.forEach(a => a.addEventListener('click', close));
-
-      window.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && drawer.classList.contains('open')) close();
-      });
-    })();
-
-    // ----------------------------
-    // Before/After slider (pointer-safe)
-    // ----------------------------
-    (function(){
-      const slider = document.getElementById('baSlider');
-      const beforeWrap = document.getElementById('beforeWrap');
-      const handle = document.getElementById('sliderHandle');
-      const knob = document.getElementById('sliderKnob');
-
-      let dragging = false;
-      let pct = 50;
-
-      const setPct = (p) => {
-        pct = Math.max(0, Math.min(100, p));
-        beforeWrap.style.width = pct + '%';
-        handle.style.left = `calc(${pct}% - 1px)`;
-        knob.style.left = `calc(${pct}% - 22px)`;
-        knob.setAttribute('aria-valuenow', Math.round(pct));
-      };
-
-      const pointerToPct = (clientX) => {
-        const r = slider.getBoundingClientRect();
-        const x = clientX - r.left;
-        return (x / r.width) * 100;
-      };
-
-      const start = (clientX) => { dragging = true; setPct(pointerToPct(clientX)); };
-      const move  = (clientX) => { if (!dragging) return; setPct(pointerToPct(clientX)); };
-      const end   = () => { dragging = false; };
-
-      // Pointer events (best cross-device)
-      knob.addEventListener('pointerdown', (e) => {
-        e.preventDefault();
-        knob.setPointerCapture(e.pointerId);
-        start(e.clientX);
-      });
-      knob.addEventListener('pointermove', (e) => move(e.clientX));
-      knob.addEventListener('pointerup', end);
-      knob.addEventListener('pointercancel', end);
-
-      // Click anywhere to jump
-      slider.addEventListener('click', (e) => {
-        if (dragging) return;
-        setPct(pointerToPct(e.clientX));
-      });
-
-      // Keyboard
-      knob.addEventListener('keydown', (e) => {
-        const step = (e.shiftKey ? 10 : 3);
-        if (e.key === 'ArrowLeft') { e.preventDefault(); setPct(pct - step); }
-        if (e.key === 'ArrowRight'){ e.preventDefault(); setPct(pct + step); }
-        if (e.key === 'Home')      { e.preventDefault(); setPct(0); }
-        if (e.key === 'End')       { e.preventDefault(); setPct(100); }
-      });
-
-      setPct(50);
-    })();
-
-    // ----------------------------
-    // Quote form -> mailto builder + Copy fallback
-    // ----------------------------
-    function buildQuoteMessage(){
-      const to = 'luxturfservice@gmail.com';
-
-      const name = document.getElementById('name').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const city = document.getElementById('city').value.trim();
-      const sqft = document.getElementById('sqft').value.trim();
-      const details = document.getElementById('details').value.trim();
-
-      const select = document.getElementById('servicesSelect');
-      const services = Array.from(select.selectedOptions).map(o => o.value);
-
-      const subject = `Luxury Turf Service - Quote Request (${name || 'New Lead'})`;
-
-      const lines = [
-        'Hi Luxury Turf Service,',
-        '',
-        'I’d like a quote for lawn services:',
-        '',
-        `Name: ${name || '(not provided)'}`,
-        `Phone: ${phone || '(not provided)'}`,
-        `City/Area: ${city || '(not provided)'}`,
-        `Lawn square footage: ${sqft || '(optional / not provided)'}`,
-        `Services interested in: ${services.length ? services.join(', ') : '(not selected)'}`,
-        '',
-        'Notes / Goals:',
-        details ? details : '(none)',
-        '',
-        'Thank you!'
-      ];
-
-      return { to, subject, body: lines.join('\n') };
-    }
-
-    document.getElementById('quoteForm').addEventListener('submit', (e) => {
-      e.preventDefault();
-      const { to, subject, body } = buildQuoteMessage();
-      const mailto = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      window.location.href = mailto;
-    });
-
-    document.getElementById('copyBtn').addEventListener('click', async () => {
-      try{
-        const { subject, body } = buildQuoteMessage();
-        const text = `Subject: ${subject}\n\n${body}`;
-        await navigator.clipboard.writeText(text);
-        const btn = document.getElementById('copyBtn');
-        const old = btn.innerHTML;
-        btn.innerHTML = '✅ Copied';
-        setTimeout(() => { btn.innerHTML = old; }, 1400);
-      }catch(err){
-        alert('Could not copy automatically. You can still submit to open your email app.');
+      if(res.ok){
+        form.style.display = 'none';
+        success.classList.add('show');
+        success.scrollIntoView({behavior:'smooth', block:'center'});
+      } else {
+        const json = await res.json().catch(()=>({}));
+        throw new Error(json.error || 'Server error');
       }
-    });
-  </script>
+    } catch(err){
+      errBox.classList.add('show');
+      btn.disabled = false;
+      lbl.textContent = 'Send Quote Request';
+    }
+  });
+})();
+</script>
 </body>
 </html>
