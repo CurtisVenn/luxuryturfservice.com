@@ -91,6 +91,42 @@ body::before{
   mix-blend-mode:overlay;opacity:.4;pointer-events:none;z-index:0;
 }
 
+/* ─── SEASONAL BANNER ────────────────────────────────────── */
+.season-banner{
+  position:relative;z-index:200;
+  background:linear-gradient(90deg,rgba(34,68,40,.95),rgba(61,110,72,.92),rgba(34,68,40,.95));
+  border-bottom:1px solid rgba(90,144,104,.35);
+  padding:10px 20px;
+  display:flex;align-items:center;justify-content:center;gap:12px;
+  font-size:13px;font-weight:500;color:var(--mint);
+  backdrop-filter:blur(8px);
+  transition:max-height .4s ease, padding .4s ease, opacity .3s ease;
+  overflow:hidden;max-height:60px;
+}
+.season-banner.dismissed{max-height:0;padding:0;opacity:0;pointer-events:none;}
+.sb-dot{
+  width:7px;height:7px;border-radius:50%;background:var(--gold);flex:0 0 auto;
+  box-shadow:0 0 0 4px rgba(201,168,76,.18);
+  animation:pulse 2.4s ease infinite;
+}
+.sb-text strong{color:var(--ivory);}
+.sb-cta{
+  display:inline-flex;align-items:center;gap:5px;
+  font-size:12px;font-weight:700;color:var(--gold);
+  border:1px solid rgba(201,168,76,.35);border-radius:999px;
+  padding:4px 12px;white-space:nowrap;
+  transition:background .15s,border-color .15s;
+}
+.sb-cta:hover{background:rgba(201,168,76,.10);border-color:rgba(201,168,76,.55);}
+.sb-dismiss{
+  position:absolute;right:14px;top:50%;transform:translateY(-50%);
+  width:24px;height:24px;border-radius:6px;border:none;cursor:pointer;
+  background:rgba(255,255,255,.05);color:var(--text-dim);
+  display:flex;align-items:center;justify-content:center;font-size:14px;
+  transition:background .15s,color .15s;
+}
+.sb-dismiss:hover{background:rgba(255,255,255,.10);color:var(--text-muted);}
+
 /* ─── LAYOUT ─────────────────────────────────────────────── */
 .wrap{width:min(var(--maxw), calc(100% - 56px));margin:0 auto;}
 section{position:relative;z-index:1;}
@@ -415,7 +451,6 @@ footer{padding:28px 0 44px;border-top:1px solid rgba(90,144,104,.12);color:var(-
   "@type":"LandscapingBusiness",
   "name":"Luxury Turf Service",
   "url":"https://www.luxuryturfservice.com/",
-  "telephone":"+1-385-424-8588",
   "email":"luxturfservice@gmail.com",
   "image":"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=85",
   "description":"Premium top dressing, aeration, overseeding, and organic soil building for residential lawns in Davis County, Utah. Serving Farmington, Kaysville, Bountiful, Layton, Centerville, North Salt Lake, Syracuse, and surrounding communities.",
@@ -454,6 +489,14 @@ footer{padding:28px 0 44px;border-top:1px solid rgba(90,144,104,.12);color:var(-
 </head>
 <body>
 
+<!-- ── SEASONAL BANNER ───────────────────────────────────── -->
+<div class="season-banner" id="seasonBanner" role="alert">
+  <span class="sb-dot"></span>
+  <span class="sb-text"><strong>Spring is peak season</strong> in Davis County — book now before the schedule fills up.</span>
+  <a class="sb-cta" href="#contact">Get a Quote →</a>
+  <button class="sb-dismiss" id="bannerDismiss" aria-label="Dismiss banner">✕</button>
+</div>
+
 <!-- ── NAV ──────────────────────────────────────────────── -->
 <header class="nav">
   <div class="wrap nav-inner">
@@ -481,7 +524,8 @@ footer{padding:28px 0 44px;border-top:1px solid rgba(90,144,104,.12);color:var(-
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" stroke-linejoin="round"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
         <span class="social-label">Instagram</span>
       </a>
-      <a class="btn ghost sm" href="tel:+13854248588">
+      <!-- tel-link: href and label injected by JS — not present in raw HTML -->
+      <a class="btn ghost sm tel-link" href="#">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6.5 3.5h3l1.2 4-2 1.2c1.3 2.6 3.4 4.7 6 6l1.2-2 4 1.2v3c0 1.1-.9 2-2 2C10.7 21 3 13.3 3 5.5c0-1.1.9-2 2-2Z" stroke-linejoin="round"/></svg>
         Call
       </a>
@@ -519,9 +563,10 @@ footer{padding:28px 0 44px;border-top:1px solid rgba(90,144,104,.12);color:var(-
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7.5 12 12l8-4.5" stroke-linecap="round"/><rect x="4" y="6" width="16" height="12" rx="1.5"/></svg>
           Request a Quote
         </a>
-        <a class="btn" href="tel:+13854248588">
+        <!-- tel-link with ph-num span: both injected by JS -->
+        <a class="btn tel-link" href="#">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6.5 3.5h3l1.2 4-2 1.2c1.3 2.6 3.4 4.7 6 6l1.2-2 4 1.2v3c0 1.1-.9 2-2 2C10.7 21 3 13.3 3 5.5c0-1.1.9-2 2-2Z" stroke-linejoin="round"/></svg>
-          385-424-8588
+          <span class="ph-num"></span>
         </a>
       </div>
       <div class="hero-trust reveal">
@@ -622,7 +667,10 @@ footer{padding:28px 0 44px;border-top:1px solid rgba(90,144,104,.12);color:var(-
         <div class="benefit-row"><div class="benefit-num">5</div><div><div class="benefit-title">Organic Options for Families</div><p class="benefit-desc">We can work organic components into the blend — feeding soil biology and building long-term turf health in a way that's safe for kids and pets.</p></div></div>
         <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:10px;">
           <a class="btn primary" href="#contact">Request a Quote</a>
-          <a class="btn" href="tel:+13854248588">385-424-8588</a>
+          <a class="btn tel-link" href="#">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" style="width:15px;height:15px"><path d="M6.5 3.5h3l1.2 4-2 1.2c1.3 2.6 3.4 4.7 6 6l1.2-2 4 1.2v3c0 1.1-.9 2-2 2C10.7 21 3 13.3 3 5.5c0-1.1.9-2 2-2Z" stroke-linejoin="round"/></svg>
+            <span class="ph-num"></span>
+          </a>
         </div>
       </div>
     </div>
@@ -708,9 +756,9 @@ footer{padding:28px 0 44px;border-top:1px solid rgba(90,144,104,.12);color:var(-
           <div class="ci-heading">Let's talk about your property.</div>
           <p class="ci-desc">Whether you want to level a bumpy yard, build a thicker lawn, or just want to know what's actually possible — we're a quick call or email away.</p>
           <div class="ci-actions">
-            <a class="btn primary" href="tel:+13854248588">
+            <a class="btn primary tel-link" href="#">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6.5 3.5h3l1.2 4-2 1.2c1.3 2.6 3.4 4.7 6 6l1.2-2 4 1.2v3c0 1.1-.9 2-2 2C10.7 21 3 13.3 3 5.5c0-1.1.9-2 2-2Z" stroke-linejoin="round"/></svg>
-              385-424-8588
+              <span class="ph-num"></span>
             </a>
             <a class="btn" href="mailto:luxturfservice@gmail.com">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7.5 12 12l8-4.5" stroke-linecap="round"/><rect x="4" y="6" width="16" height="12" rx="1.5"/></svg>
@@ -747,7 +795,8 @@ footer{padding:28px 0 44px;border-top:1px solid rgba(90,144,104,.12);color:var(-
           </div>
           <h3>Quote Request Sent!</h3>
           <p>We'll review your details and get back to you with a specific quote — usually within one business day.</p>
-          <p style="margin-top:10px;">Questions in the meantime? Call us at <a href="tel:+13854248588">385-424-8588</a>.</p>
+          <!-- Phone in success message injected by JS -->
+          <p style="margin-top:10px;">Questions in the meantime? Call us at <a class="tel-link" href="#"><span class="ph-num"></span></a>.</p>
         </div>
 
         <form class="form" id="quoteForm" action="https://formspree.io/f/xpqoqanj" method="POST">
@@ -794,7 +843,7 @@ footer{padding:28px 0 44px;border-top:1px solid rgba(90,144,104,.12);color:var(-
             <span id="submitLabel">Send Quote Request</span>
           </button>
           <div class="form-error" id="formError">
-            Something went wrong — please try again, or call us at <a href="tel:+13854248588">385-424-8588</a>.
+            Something went wrong — please try again, or call us at <a class="tel-link" href="#"><span class="ph-num"></span></a>.
           </div>
           <p class="hint" style="text-align:center;margin-top:4px;">Your info goes straight to our inbox. No spam, no sales calls.</p>
         </form>
@@ -815,7 +864,10 @@ footer{padding:28px 0 44px;border-top:1px solid rgba(90,144,104,.12);color:var(-
         <div class="cta-heading">Make your lawn look and feel luxury.</div>
         <div class="cta-actions">
           <a class="btn gold" href="#contact">Request a Quote</a>
-          <a class="btn" href="tel:+13854248588">Call 385-424-8588</a>
+          <!-- tel-link injected by JS -->
+          <a class="btn tel-link" href="#">
+            Call <span class="ph-num"></span>
+          </a>
         </div>
       </div>
     </div>
@@ -846,7 +898,8 @@ footer{padding:28px 0 44px;border-top:1px solid rgba(90,144,104,.12);color:var(-
         <div>© <span id="year"></span> Luxury Turf Service &nbsp;•&nbsp; Davis County, UT</div>
         <div class="footer-links">
           <a href="mailto:luxturfservice@gmail.com">luxturfservice@gmail.com</a>
-          <a href="tel:+13854248588">385-424-8588</a>
+          <!-- Footer phone also injected by JS -->
+          <a class="tel-link" href="#"><span class="ph-num"></span></a>
         </div>
       </div>
     </div>
@@ -857,6 +910,35 @@ footer{padding:28px 0 44px;border-top:1px solid rgba(90,144,104,.12);color:var(-
 <script>
 // ── Year ──────────────────────────────────────────────────────
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// ── Phone injection ──────────────────────────────────────────
+// Number assembled at runtime from parts — never present in raw HTML.
+// Static scrapers and harvesters parse source; they won't find it here.
+(function(){
+  const p = ['3','8','5','-','4','2','4','-','8','5','8','8'].join('');
+  const href = 'tel:+1' + p.replace(/-/g,'');
+  document.querySelectorAll('.tel-link').forEach(function(el){
+    el.href = href;
+  });
+  document.querySelectorAll('.ph-num').forEach(function(el){
+    el.textContent = p;
+  });
+})();
+
+// ── Seasonal banner dismiss ───────────────────────────────────
+(function(){
+  var btn = document.getElementById('bannerDismiss');
+  var banner = document.getElementById('seasonBanner');
+  if(!btn || !banner) return;
+  // Respect previous dismiss (session-level)
+  if(sessionStorage.getItem('bannerDismissed')){
+    banner.classList.add('dismissed');
+  }
+  btn.addEventListener('click', function(){
+    banner.classList.add('dismissed');
+    sessionStorage.setItem('bannerDismissed','1');
+  });
+})();
 
 // ── Hero parallax ────────────────────────────────────────────
 const heroBg = document.getElementById('heroBg');
